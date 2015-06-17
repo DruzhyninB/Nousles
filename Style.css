@@ -1,0 +1,384 @@
+﻿/* 1.Header
+   2.Welcome
+   #. Conecting Fonts
+   #. Geometric
+*/
+
+
+body {
+background: url('img/body-dg.png') repeat-y;
+}
+ /*
+     1.Header
+ */
+ #header{
+     display:block;
+ }
+ .navbar-brand{
+     padding:40px 15px;
+ }
+ li a{
+     font-family:Alef;
+     font-size:20px;
+     font-style:italic;
+     color:#fff;
+ }
+ li a:hover{
+     font-weight:bold;
+ }
+ li{
+     font-family:Alef;
+     font-size:20px;
+     font-style:italic;
+     color:#fff;
+     vertical-align:central;
+ }
+ .navbar-center{
+     width:680px;
+     height:100%;
+     margin:40px auto 0px;
+ }
+ .opac-layout-50{
+     background:rgba(0,0,0,0.5);
+ }
+/*
+    2.Welcome
+*/
+#welcome{
+    display:block;
+    height:600px;
+}
+.oran-grad{
+    width:500px;
+    height:30px;
+    box-shadow: 6px -33px 100px -26px #ffb51c inset;
+    position:absolute;
+    z-index:1;
+}
+.prisma{
+    position:absolute;
+    left:400px;
+    z-index:3;
+}
+.shadow{
+    position:absolute;
+    left:370px;
+    top:25px;
+    z-index:2;
+}
+.welc{
+    position:absolute;
+    z-index:4;
+    left:700px;
+    top:150px;
+}
+/*
+    3.What
+*/
+#what{
+    display:block;
+}
+.assets img{
+    display:block;
+    width:45px;
+    margin:0px auto 15px;
+
+}
+div h2{
+    width: auto;
+    text-align: center;
+    font-family: Chunkfive;
+    font-size: 60px;
+    color: #fff;
+    margin: 80px 0px 0px 0px;
+    line-height: 30px;
+}
+div.span+p{
+    width:auto;
+    text-align:center;
+    padding:20px 0px;
+    border-bottom:1px solid #fff;
+    border-top:1px solid #fff;
+    color:#fff;
+    font-family:alef;
+    font-size:20px;
+}
+.opac-line{
+    width:250px;
+    opacity:0.3;
+
+}
+ div.span{
+    width: 100%;
+    text-align: center;
+    font-family: Alef;
+    font-style: italic;
+    font-size: 24px;
+    padding: 6px 60px 10px;
+    color: #fff;
+    position:relative;
+}
+.squer{
+    position:absolute;
+    left:0px;
+    bottom:-2px;
+    width:20px;
+    height:4px;
+    background-color:#fff
+}
+.RXD {
+    margin-top: 80px;
+    height:86px;
+    width: 390px;
+    background-image: url('img/bg-rxd.png');
+    position:relative;
+}
+.RXD p{
+    line-height:86px;
+    width:100%;
+    font-family:Alef;
+    font-weight:bold;
+    font-size:32px;
+    text-align:center;
+    color:#fff;
+    letter-spacing:10px;
+}
+.RXD+p{
+     width:100%;
+    font-family:Alef;
+    font-size:12px;
+    text-align:center;
+    color:#fff;
+    margin-top:15px;
+    word-spacing:2px;
+}
+.circle{
+    position:absolute;
+    width:25px;
+    height:25px;
+    border-radius:100%;
+    padding:2px;
+    border:1px solid #fff;
+}
+
+.circle-top-1{
+    top:-11px;
+    left:65px;
+}
+.circle-top-2{
+    top:-11px;
+    left:165px;
+}
+.circle-bot{
+    bottom:-11px;
+    right:75px;
+}
+.circle .plus{
+    width:19px;
+    height:19px;
+    border-radius:100%;
+    background-color:#fff;
+    text-align:center;
+    font-weight:900;
+    transition: background-color 1s;
+    cursor:pointer;
+}
+.circle .plus:hover{
+    background-color:#52b2cf;
+}
+.mans{
+    position:relative;
+}
+                                        ul.humans li{
+                                            display:inline;
+                                        }
+.hex-container{
+    width:100%;
+    height:270px;
+}
+.hum-line-container{
+    width:630px;
+    height:30px;
+    border-left:1px solid rgba(255,255,255,0.5);
+    border-right:1px solid rgba(255,255,255,0.5);
+    padding:10px 30px 5px;
+    margin: 0px auto;
+}
+.hum-line{
+    height:13px;
+    box-shadow: 0px 2px 4px 1px #000000 inset;
+    background-color:#111014;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    #.Conecting Fonts
+*/
+@font-face {
+    font-family: 'Chunkfive';
+    src: url('fonts/ChunkFive/Chunkfive.otf') format('opentype');
+}
+/*
+    #. Geometric
+*/
+.hex {
+	/*width:300px;
+	height:172px;*/
+	background-color: #ccc;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;			
+	-webkit-background-size: auto 173px;							
+	-moz-background-size: auto 173px;							
+	-ms-background-size: auto 173px;							
+	-o-background-size: auto 173px;							
+	position: relative;
+	float:left;
+	margin:25px 5px;
+	text-align:center;
+	zoom:1;
+}
+		
+.hex.hex-gap {
+    margin-left: 86px;
+
+}
+	
+	.hex a {
+		display:block;
+		width: 100%;
+		height:100%;
+		text-indent:-9999em;
+		position:absolute;
+		top:0;
+		left:0;
+	}
+
+	.hex .corner-1,
+	.hex .corner-2 {
+		position: absolute;
+		top: 0px;
+        left:0px;
+        width: 100%;
+        height:100%;
+        background: inherit;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;								
+		z-index:-2;						
+		overflow:hidden;
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		-o-backface-visibility: hidden;			
+		backface-visibility: hidden;			
+	}
+	
+	.hex .corner-1 {
+		z-index:-1;
+		-webkit-transform: rotate(60deg);
+		-moz-transform: rotate(60deg);
+		-ms-transform: rotate(60deg);
+		-o-transform: rotate(60deg);
+		transform: rotate(60deg);
+	}
+	
+	.hex .corner-2 {
+		-webkit-transform: rotate(-60deg);
+		-moz-transform: rotate(-60deg);
+		-ms-transform: rotate(-60deg);
+		-o-transform: rotate(-60deg);
+		transform: rotate(-60deg);
+	}
+	
+	.hex .corner-1:before,
+	.hex .corner-2:before {
+		width: 173px;
+		height:	173px;
+	  content: '';
+	  position: absolute;
+	  background: inherit;
+	  top:0;
+	  left: 0;
+	  z-index: 1;
+	  background: inherit;
+	  background-repeat:no-repeat;
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		-o-backface-visibility: hidden;	
+		backface-visibility: hidden;				  
+	}			
+	
+
+	.hex .corner-1:before {
+		-webkit-transform: rotate(-60deg) translate(-87px, 0px);
+		-moz-transform: rotate(-60deg) translate(-87px, 0px);
+		-ms-transform: rotate(-60deg) translate(-87px, 0px);
+		-o-transform: rotate(-60deg) translate(-87px, 0px);
+		transform: rotate(-60deg) translate(-87px, 0px);	
+	  -webkit-transform-origin: 0 0;
+	  -moz-transform-origin: 0 0;
+	  -ms-transform-origin: 0 0;
+	  -o-transform-origin: 0 0;
+	  transform-origin: 0 0;
+	}			
+	
+	.hex .corner-2:before {
+		-webkit-transform: rotate(60deg) translate(-48px, -11px);
+		-moz-transform: rotate(60deg) translate(-48px, -11px);
+		-ms-transform: rotate(60deg) translate(-48px, -11px);
+		-o-transform: rotate(60deg) translate(-48px, -11px);
+		transform: rotate(60deg) translate(-48px, -11px);	
+		bottom:0;
+	}		
+
+
+	
+	/* Custom styles*/
+	.hex .inner {		
+		color:#eee;
+	}
+	
+	.hex h4 {
+		font-family:Chunkfive;		
+        font-size:28px;
+        font-weight:100;
+		margin:0;			
+	}
+	
+	.hex hr {
+		border:0;
+		border-top:1px solid #eee;
+		width:60%;
+		margin:15px auto;
+	}
+	
+	.hex p {
+		font-size:20px;
+		font-family:Alef;
+		width:80%;
+        font-style:italic;
+		margin:0 auto;
+	}
+
+	.hex.hex-1 {
+		background-color:#1a1a1a;
+        border-left:1px solid #fff;
+        border-right:1px solid #fff;
+        top:50px;
+        left:100px;
+        width: 200px;
+        height: 114px;
+	}
