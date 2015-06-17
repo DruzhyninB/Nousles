@@ -62,9 +62,9 @@ background: url('img/body-dg.png') repeat-y;
 }
 .shadow{
     position:absolute;
-    left:370px;
-    top:25px;
-    z-index:2;
+     left:512px;
+    top: 167px;
+    z-index: -1;
 }
 .welc{
     position:absolute;
