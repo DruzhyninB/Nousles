@@ -1,5 +1,6 @@
 ﻿/* 1.Header
    2.Welcome
+   3. How
    #. Conecting Fonts
    #. Geometric
 */
@@ -187,11 +188,11 @@ div.span+p{
     background-color:#52b2cf;
 }
 .mans{
-    position:relative;
+  position: relative;
+  width: 700px;
+  height: 100px;
+  margin: 0px auto 35px;
 }
-                                        ul.humans li{
-                                            display:inline;
-                                        }
 .hex-container{
     width:100%;
     height:270px;
@@ -202,13 +203,303 @@ div.span+p{
     border-left:1px solid rgba(255,255,255,0.5);
     border-right:1px solid rgba(255,255,255,0.5);
     padding:10px 30px 5px;
-    margin: 0px auto;
+    float:left;
 }
 .hum-line{
     height:13px;
     box-shadow: 0px 2px 4px 1px #000000 inset;
     background-color:#111014;
 }
+.pointer{
+    width:21px;
+    height:21px;
+    border:1px solid #000;
+    border-radius:100%;
+    background-color:#626262;
+    position:absolute;
+    top:86px;
+    
+}
+.pointer-1{left:60px;}
+.pointer-2{left:411px;}
+.pointer-3{left:609px;}
+.hum-dot {
+    width:20px;
+    height:22px;
+    float:left;
+    margin: 4px 7px 0px;
+}
+.figures{
+    width:100%;
+    height:80px;
+}
+div.figures img{
+    position:relative;
+}
+.man2{left:19px}
+.man3{left: 33px; top: -6px;}
+.man4{top: -6px;  left: 37px;}
+.man5{top: -6px;  left: 41px;}
+.man6{left: 111px;}
+.man7{left: 253px;}
+.gift{left: 263px;top: -11px;}
+.basket{left: 197px;top: 17px;}
+.miksher{
+    position:relative;
+    width:700px;
+    height:390px;
+    margin:0px auto;
+    border-top:1px solid rgba(255,255,255,0.1);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+.miksher>div{
+    float:left;
+}
+.reach,.desirability{
+     background: url('img/lines.png') no-repeat;
+  background-position: 50% 39px;
+  width: 150px;
+  height: 256px;
+  margin-left: 80px;
+  margin-top: 50px;
+}
+.reach p,.desirability p{
+  font-family: alef;
+  font-size: 70px;
+  line-height: 26px;
+  color: #fff;
+  text-align: center;
+}
+.reach span,.desirability span{
+    display: block;
+  font-size: 27px;
+  font-family: alef;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+.line-mik{
+  width: 10px;
+  height: 90px;
+  margin: 20px auto 0px;
+}
+.btn-mik img{
+  display: block;
+  margin: 0px auto;
+}
+.non-active{
+    background-color:#232129;
+    box-shadow:0px 0px 4px 2px #000 inset;
+    
+}
+.active-p{
+    background-color:#d6b83c;
+    box-shadow:0px 0px 4px 2px #000 inset;
+    margin: 0px auto;
+}
+.active-p-red{
+    background-color:#f35151;
+    box-shadow:0px 0px 4px 2px #000 inset;
+    margin: 0px auto;
+}
+.Ep{
+  position: relative;
+  top: 184px;
+  left: 46px;
+}
+.Ep span{
+      display: block;
+  margin-left: 64px;
+  margin-top: -24px;
+  font-family: Alef;
+  font-size: 27px;
+  font-weight: bold;
+}
+.numbers{
+  position: absolute;
+  top: 97px;
+  left: 263px;
+  z-index: 10;
+}
+.btn-num{
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #f3f3f3;
+  font-family: alef;
+  text-align: center;
+  font-size: 24px;
+  border: 1px solid #000;
+  box-shadow: 0px 0px 4px 1px #000 inset;
+  margin: 0px 10px;
+
+}
+/*
+    3. How
+*/
+#how{
+    display:block;
+}
+#how h3{
+    width: 377px;
+    text-align: center;
+    font-family: Chunkfive;
+    font-size: 60px;
+    color: #fff;
+    margin:80px auto;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.brain{
+    left: 610px;
+}
+.how-graphics{
+      display: block;
+  width: 100%;
+  height: 2207px;
+}
+.how-graphics div{
+    float:left;
+    position:absolute;
+}
+.text-box{
+  width: 330px;
+  left: 170px;
+  top: 575px;
+}
+.text-box2{
+top: 1240px;
+}
+.text-box p{
+    width:100%;
+    padding-bottom:15px;
+    border-bottom:1px solid #fff;
+    font-family:alef;
+    font-size:28px;
+    font-weight:bold;
+    text-align:center;
+    color:#fff;
+}
+.text-box span{
+    display:block;
+    width:100%;
+    font-family:alef;
+    font-size:18px;
+    text-align:left;
+    color:#fff;
+}
+.big-man{
+      z-index: -1;
+  left: 178px;
+  top: 510px;
+}
+.heart{
+      left: 536px;
+  top: 986px;
+}
+.infinity{
+  position: relative;
+  text-align: center;
+  top: -191px;
+  left: 52px;
+}
+.Fr-Fe{
+  font-family: alef;
+  font-size: 34px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  width: 230px;
+  height: 85px;
+  position: relative;
+  border: 2px solid #fff;
+  border-radius: 51px;
+  top: 178px;
+  left: 455px;
+  background-color: rgba(33,33,33,0.91);
+  vertical-align: middle;
+  line-height: 79px;
+}
+.circ-1,.circ-2{
+width:17px;
+    height:17px;
+    border-radius:100%;
+    background-color:#fff;float:left;
+    margin:0px auto;
+}
+.circ-1{
+  position: absolute;
+  top: 210px;
+  left: 448px;
+  z-index:5
+}
+.circ-2{
+    position: absolute;
+  top: 210px;
+  right: 448px;
+}
+/*
+    Line prop
+*/
+.vector-line-1{
+  width: 150px;
+  border-top: 3px solid #ab9230;
+  transform: rotate(45deg);
+  left: 590px;
+  top: 216px;
+  border-radius: 100px;
+}
+.vector-line-2{
+  width: 216px;
+  border-top: 3px solid #4fa5a5;
+  transform: rotate(138deg);
+  left: 456px;
+  top: 500px;
+  border-radius: 100px;
+}
+.vector-line-3{
+  width: 460px;
+  border-top: 3px solid #4fa5a5;
+  transform: rotate(120deg);
+  left: 584px;
+  top: 799px;
+  border-radius: 100px;
+}
+.vector-line-4{
+    width: 122px;
+  border-top: 3px solid #4fa5a5;
+  transform: rotate(139deg);
+  left: 451px;
+  top: 1210px;
+  border-radius: 100px;
+}
+.vector-line-5{
+      width: 600px;
+  border-top: 3px solid #d14343;
+  transform: rotate(135deg);
+  left: 314px;
+  top: 1588px;
+  border-radius: 100px;
+}
+.vector-line-6{
+    width: 800px;
+  border-top: 3px solid #fff;
+  transform: rotate(45deg);
+  left: 285px;
+  top: 2081px;
+  border-radius: 100px;
+}
+.vector-line-7{
+      width: 455px;
+  border-top: 3px solid #fff;
+  transform: rotate(135deg);
+  left: 258px;
+  top: 2204px;
+  border-radius: 100px;
+}
+
+
 
 
 
