@@ -9,7 +9,6 @@
 
 
 body {
-background: url('img/body-dg.png') repeat-y;
 }
  /*
      1.Header
@@ -18,7 +17,9 @@ background: url('img/body-dg.png') repeat-y;
      display:block;
  }
  .navbar-brand{
-     padding:40px 15px;
+  padding: 40px 15px;
+  width: 175px;
+  margin: 0px auto;
  }
  li a{
      font-family:Alef;
@@ -52,15 +53,21 @@ background: url('img/body-dg.png') repeat-y;
     height:600px;
 }
 .oran-grad{
-    width:500px;
-    height:30px;
-    box-shadow: 6px -33px 100px -26px #ffb51c inset;
     position:absolute;
-    z-index:1;
+    z-index:0;
+}
+.lil-grad{
+  position: absolute;
+  z-index: 0;
+  left: 16px;
+  top: 183px;
+}
+.lil-grad img{
+    width:1100px;
 }
 .prisma{
     position:absolute;
-    left:400px;
+    left:345px;
     z-index:3;
 }
 .shadow{
@@ -72,7 +79,7 @@ background: url('img/body-dg.png') repeat-y;
 .welc{
     position:absolute;
     z-index:4;
-    left:700px;
+    left:650px;
     top:150px;
 }
 /*
