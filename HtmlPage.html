@@ -1,103 +1,94 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<!doctype html>
+<html lang="en">
 <head>
-    <title></title>
-    <link href="Custom.css" rel="stylesheet" /><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <title>jQuery UI Slider - Vertical slider</title>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    
+
+    <style>
+        span.ui-slider-handle {
+            background-image: url('range.png') !important;
+            border: none !important;
+            border-radius: 0 !important;
+            width: 26px !important;
+            height: 26px !important;
+            left: -9px !important;
+            -webkit-box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.7);
+            -moz-box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.7);
+            box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.7);
+        }
+
+        .ui-widget-content {
+            border-radius: 0 !important;
+            border-color: #212123 !important;
+            width: 8px !important;
+            height: 215px !important;
+        }
+
+        #slider-vertical-left.ui-widget-content {
+            background: -webkit-linear-gradient(left, #0f0f11 0, #121116 50%, #0f0f11 100%) 50% 50% repeat-x !important;
+            left: 200px !important;
+            top: 10px !important;
+            z-index: 1 !important;
+        }
+
+        #slider-vertical-right.ui-widget-content {
+            background: -webkit-linear-gradient(left, #0c0c0e 0, #121116 50%, #0c0c0e 100%) 50% 50% repeat-x !important;
+            left: 580px !important;
+            top: -207px !important;
+            z-index: 2 !important;
+        }
+
+        .ui-widget-content div.ui-slider-range {
+            border-radius: 0 !important;
+            outline: none !important;
+        }
+
+        #slider-vertical-left.ui-widget-content div.ui-slider-range {
+            background: -webkit-linear-gradient(left, #4f4522 0, #d8b93c 50%, #4f4522 100%) 50% 50% repeat-x !important;
+        }
+
+        #slider-vertical-right.ui-widget-content div.ui-slider-range {
+            background: -webkit-linear-gradient(left, #572526 0, #f35051 50%, #572526 100%) 50% 50% repeat-x !important;
+        }
+    </style>
+
+    <script>
+
+        $(function () {
+            $("#slider-vertical-left, #slider-vertical-right").slider({
+                orientation: "vertical",
+                range: "min",
+                min: 0,
+                max: 100,
+                value: 60,
+                slide: function (event, ui) {
+                    $("#amount").val(ui.value);
+                }
+            });
+
+            $("#amount").val($("#slider-vertical").slider("value"));
+        });
+    </script>
 </head>
-<body style="background-color:#1a1a1a">
-    <div class="hexa-group">
-        <div class="hex hex-2" id="hexa2">
-            <h4>Branding</h4>
-            <hr />
-            <p>+</p>
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>
-        </div>
-        <div class="hex hex-3" id="hexa3">
-            <h4>Intarective & Web</h4>
-            <hr />
-            <p>+</p>
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>
-        </div>
-        <div class="hex hex-4" id="hexa4">
-            <h4>Consultancy & Managment</h4>
-            <hr />
-            <p>+</p>
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>
-        </div>
-        <div class="hex hex-5" id="hexa5">
-            <h4>Marketing</h4>
-            <hr />
-            <p>+</p>
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>
-        </div>
-        <div class="hex hex-6" id="hexa6">
-            <h4>Content generation</h4>
-            <hr />
-            <p>+</p>
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>
-        </div>
-    </div>
-    <hr />
-    <div class="all-serv">All Services</div>
-    <div id="cicle-group-info">
-        <div class="circle-info filter-brand" data-id="1">Lorem ipsum dolor sit amet</div>
-        <div class="circle-info filter-brand" data-id="2">Lorem ipsum dolor sit amet</div>
-        <div class="circle-info filter-brand" data-id="3">Lorem ipsum dolor sit amet</div>
-        <div class="circle-info filter-brand" data-id="4">Lorem ipsum dolor sit amet</div>
-        <div class="circle-info filter-webInter" data-id="5">Lorem ipsum dolor sit amet</div>
-        <div class="circle-info filter-webInter" data-id="6">Lorem ipsum dolor sit amet</div>
-        <div class="circle-info filter-webInter" data-id="7">Lorem ipsum dolor sit amet</div>
-        <div class="circle-info filter-webInter" data-id="8">Lorem ipsum dolor sit amet</div>
-        <div class="circle-info filter-manegment" data-id="9">Lorem ipsum dolor sit amet</div>
-        <div class="circle-info filter-manegment" data-id="10">Lorem ipsum dolor sit amet</div>
-        <div class="circle-info filter-manegment" data-id="11">Lorem ipsum dolor sit amet</div>
-        <div class="circle-info filter-manegment" data-id="12">Lorem ipsum dolor sit amet</div>
-        <div class="circle-info filter-marketing" data-id="13">Lorem ipsum dolor sit amet</div>
-        <div class="circle-info filter-marketing" data-id="14">Lorem ipsum dolor sit amet</div>
-        <div class="circle-info filter-marketing" data-id="15">Lorem ipsum dolor sit amet</div>
-        <div class="circle-info filter-marketing" data-id="16">Lorem ipsum dolor sit amet</div>
-        <div class="circle-info filter-contGener" data-id="17">Lorem ipsum dolor sit amet</div>
-        <div class="circle-info filter-contGener" data-id="18">Lorem ipsum dolor sit amet</div>
-        <div class="circle-info filter-contGener" data-id="19">Lorem ipsum dolor sit amet</div>
-        <div class="circle-info filter-contGener" data-id="20">Lorem ipsum dolor sit amet</div>
-    </div>
-    <div class="select">
-        <label class="sr-only" for="exampleInputAmount"></label>
-        <div class="Input-group-name oneIn">Services:</div>
-        <div class="form-control" id="checkboxClick">Select...</div>
-        <div id="checkbox-holder">
-            <input type="text" id="focus-inp" />
-            <table>
-                <tr><td><input type="checkbox" id="1" /><label for="1">LOREM IMPUS</label></td></tr>
-                <tr><td><input type="checkbox" id="2" /><label for="2">LOREM IMPUS</label></td></tr>
-                <tr><td><input type="checkbox" id="3" /><label for="3">LOREM IMPUS</label></td></tr>
-                <tr><td><input type="checkbox" id="4" /><label for="4">LOREM IMPUS</label></td></tr>
-                <tr><td><input type="checkbox" id="5" /><label for="5">LOREM IMPUS</label></td></tr>
-                <tr><td><input type="checkbox" id="6" /><label for="6">LOREM IMPUS</label></td></tr>
-                <tr><td><input type="checkbox" id="7" /><label for="7">LOREM IMPUS</label></td></tr>
-                <tr><td><input type="checkbox" id="8" /><label for="8">LOREM IMPUS</label></td></tr>
-                <tr><td><input type="checkbox" id="9" /><label for="9">LOREM IMPUS</label></td></tr>
-                <tr><td><input type="checkbox" id="10" /><label for="10">LOREM IMPUS</label></td></tr>
-                <tr><td><input type="checkbox" id="11" /><label for="11">LOREM IMPUS</label></td></tr>
-                <tr><td><input type="checkbox" id="12" /><label for="12">LOREM IMPUS</label></td></tr>
-                <tr><td><input type="checkbox" id="13" /><label for="13">LOREM IMPUS</label></td></tr>
-                <tr><td><input type="checkbox" id="14" /><label for="14">LOREM IMPUS</label></td></tr>
-                <tr><td><input type="checkbox" id="15" /><label for="15">LOREM IMPUS</label></td></tr>
-                <tr><td><input type="checkbox" id="16" /><label for="16">LOREM IMPUS</label></td></tr>
-                <tr><td><input type="checkbox" id="17" /><label for="17">LOREM IMPUS</label></td></tr>
-                <tr><td><input type="checkbox" id="18" /><label for="18">LOREM IMPUS</label></td></tr>
-                <tr><td><input type="checkbox" id="19" /><label for="19">LOREM IMPUS</label></td></tr>
-                <tr><td><input type="checkbox" id="20" /><label for="20">LOREM IMPUS</label></td></tr>
+<body>
 
-            </table>
 
-        </div>
+
+    <div id="slider-vertical-left">
+
     </div>
-    <script src="js/CustomJs.js"></script>
+    <p id="amount"></p>
+    <div id="slider-vertical-right">
+
+    </div>
+
+
 </body>
 </html>

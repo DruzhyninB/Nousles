@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Neo Sans';
+    src: url('font/neosans.eot');
+    src: url('font/neosans.eot') format('embedded-opentype'),
+         url('font/neosans.woff') format('woff'),
+         url('font/neosans.ttf') format('truetype'),
+         url('font/neosans.svg#NeoSansRegular') format('svg');
+}
+@font-face {
+    font-family: 'NeoSansProLight';
+    src: url('font/neosanslight.eot');
+    src: url('font/neosanslight.eot') format('embedded-opentype'),
+         url('font/neosanslight.woff') format('woff'),
+         url('font/neosanslight.ttf') format('truetype'),
+         url('font/neosanslight.svg#NeoSansProLight') format('svg');
+}

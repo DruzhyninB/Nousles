@@ -9,8 +9,12 @@
 
 $.scrollingParallax('img/body-dg.png', {
     enableHorizontal: true,
-    bgWidth : '200%'
+    bgWidth: 'auto',
+    staticSpeed: 0.03,
 });
+
+
+
 
 //2.Service logic
 
@@ -24,31 +28,38 @@ function start() {
     document.getElementById("hexa6").addEventListener("click", hex6Click, true);
     //Circle expand
     document.getElementById("cicle-group-info").addEventListener("click", CircleExpand, true);
-    //Expande checkbox list
+    //Expande\Compression checkbox list
     document.getElementById("checkboxClick").addEventListener("click", checkboxExpand, false);
-    //Compression checkbox list
-    document.getElementById("checkbox-holder").addEventListener("blur", checkboxCompression, true);
+    var flag = false;
     function CircleExpand(e) {
         var elem = e.target;
         var closeIcon = document.createElement("div");
         closeIcon.className = "closeIcon";
-        closeIcon.innerHTML = "X"
         if (elem.className !== "closeIcon") {
-            if (elem.id !== "cicle-group-info") { 
+            if (elem.id !== "cicle-group-info" && elem.className !== "add" && elem.className !== "circle-content") {
                 if (elem.querySelector("#active-circle .closeIcon") == null) {
                     elem.id = "active-circle";
-                    elem.appendChild(closeIcon);
-                    elem.querySelector("#active-circle .closeIcon").style.opacity = 1;
-                } else {
-                    var selectedId = elem.dataset.id;
-                    document.get
+                    
+                    setTimeout(function () {
+                        elem.innerHTML = "<span class='circle-head'>Lorem ipsum dolor sit amet</span><p class='circle-content'>Donec dictum justo placerat, luctus lacus id, eleifend lectus. Vivamus a nunc turpis.</p><br/><span class='add'>Add to <br/>contact form<br/>✔</span>"
+                        elem.appendChild(closeIcon);
+                        elem.querySelector("#active-circle .closeIcon").style.opacity = 1;
+                    }, 1100)
+                    
+                } 
 
-            } 
+             
+            } else {
+                if(elem.className == "add"){
+                var selectedId = elem.parentElement.dataset.id;
+                document.getElementById(selectedId).setAttribute("checked", "checked");
+            }
         }
             
         } else {
-            elem.parentElement.id = ""
-            elem.parentElement.removeChild(elem);
+            elem.parentElement.id = "";
+            elem.parentElement.innerHTML = "Lorem ipsum dolor sit amet";
+            
 
         }
     }
@@ -117,10 +128,44 @@ function start() {
 
     //Expande chexbox list(function)
     function checkboxExpand() {
-        document.getElementById("checkbox-holder").style.height = "150px";
+        if (flag) {
+            document.getElementById("checkbox-holder").style.height = "0px";
+            flag = false;
+        } else {
+            document.getElementById("checkbox-holder").style.height = "150px";
+            flag = true;
+        }
+        
     };
-    function checkboxCompression() {
-        document.getElementById("checkbox-holder").style.height = "0px";
-    }
 
 };
+
+
+
+
+//MENU SCROLLING WITH ACTIVE ITEM SELECTED
+jQuery(document).ready(function () {
+    jQuery("a#scroll").click(function () {
+        elementClick = jQuery(this).attr("href")
+        destination = jQuery(elementClick).offset().top;
+        jQuery("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination }, 1100);
+        return false;
+    });
+});
+
+
+//mikshers
+$(function () {
+    $("#slider-vertical-left, #slider-vertical-right").slider({
+        orientation: "vertical",
+        range: "min",
+        min: 0,
+        max: 100,
+        value: 60,
+        slide: function (event, ui) {
+            $("#amount").val(ui.value);
+        }
+    });
+
+    $("#amount").val($("#slider-vertical").slider("value"));
+});

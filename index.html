@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- Custom CSS -->
     <link href="Custom.css" rel="stylesheet" />
+    <link href="css/awwwards.css" rel="stylesheet" />
+    <link href="css/fontfaces.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/keyframes.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     
     <!-- Google fonts -->
     <link href='http://fonts.googleapis.com/css?family=Alef' rel='stylesheet' type='text/css'>
@@ -29,12 +34,12 @@
             </div>
             <div class="row">
                 <ul class="nav nav-pills navbar-center">
-                    <li role="presentation"><a href="#welcome">Welcom</a></li><li>/</li>
-                    <li role="presentation"><a href="#what">What</a></li><li>/</li>
-                    <li role="presentation"><a href="#how">How</a></li><li>/</li>
-                    <li role="presentation"><a href="#service">Services</a></li><li>/</li>
-                    <li role="presentation"><a href="#">Case studies</a></li><li>/</li>
-                    <li role="presentation"><a href="#contact">Contact</a></li>
+                    <li role="presentation"><a href="#welcome" id="scroll">Welcom</a></li><li>/</li>
+                    <li role="presentation"><a href="#what" id="scroll">What</a></li><li>/</li>
+                    <li role="presentation"><a href="#how" id="scroll">How</a></li><li>/</li>
+                    <li role="presentation"><a href="#service" id="scroll">Services</a></li><li>/</li>
+                    <li role="presentation"><a href="#case" id="scroll">Case studies</a></li><li>/</li>
+                    <li role="presentation"><a href="#contact" id="scroll">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -100,18 +105,18 @@
                         <div class="miksher">
                             <div class="reach">
                                 <p>+</p>
-                                <div class="line-mik non-active"></div>
-                                <div class="btn-mik"><img src="img/btn-mik.png" /></div>
-                                <div class="line-mik active-p"></div>
+                                <div id="slider-vertical-left">
+
+                                </div>
                                 <span>50%<br>Reach</span>
                             </div>
                             <div class="numbers"><div class="btn-num">1</div><div class="btn-num">2</div><div class="btn-num">3</div></div>
                             <div class="Ep"><img src="img/wi-fi.png" /><span>Ep</span></div>
                             <div class="desirability">
                                 <p>+</p>
-                                <div class="line-mik non-active"></div>
-                                <div class="btn-mik"><img src="img/btn-mik.png" /></div>
-                                <div class="line-mik active-p-red"></div>
+                                <div id="slider-vertical-right">
+
+                                </div>
                                 <span>50%<br>Desirability</span>
                             </div>
                         </div>
@@ -246,6 +251,230 @@
             </div>
         </div>
     </section>
+    <hr />
+    <section id="case">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Case studies</h3>
+
+                    <div id="bodyContents" style="position:relative;">
+                        <div id="content">
+                            <section class="tactile-section" id="references">
+                                <div id="tRefCol1">
+
+                                    <div class="ref-resources" for="reference1">
+                                        <img src="references/sfl/close.png" for="reference1" class="ref-close" />
+                                        <div class="swipe">
+                                            <div class="swipe-wrap">
+                                                <div>
+                                                    <div class="ref-image" style="background-image:url('references/fft/images/image1.jpg')"></div>
+                                                </div>
+                                                <div>
+                                                    <div class="ref-image" style="background-image:url('references/fft/images/image2.jpg')"></div>
+                                                </div>
+                                                <div>
+                                                    <div class="ref-image" style="background-image:url('references/fft/images/image3.jpg')"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img class="ref-fleche-gauche" src="img/fleche_gauche.png" alt="Défiler à gauche" />
+                                        <img class="ref-fleche-droite" src="img/fleche_droite.png" alt="Défiler à droite" />
+                                    </div>
+                                    <div class="ref-index" id="reference0" style="background-color:#ff6699;">
+                                        <img src="references/sfl/main.jpg" />
+                                        <div class="blur_ref-index blur_ref-index_0"></div>
+                                        <div class="ref-title">
+                                            <h2>Customer name in English</h2>
+                                        </div>
+                                        <div class="slider_text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Morbi at est nec orci euismod tristique a eu metus. Cras
+                                            pharetra diam at velit commodo vehicula. Etiam hendrerit
+                                            augue rhoncus pulvinar sodales. Nam tincidunt feugiat urna,
+                                            suscipit scelerisque erat luctus faucibus. Curabitur ultricies
+                                            ipsum felis, sed Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Morbi at est nec orci euismod tristique a eu metus. Cras pharetra diam at
+                                            velit comm... hicula. Etiam hendrerit augue rhoncus pulvinar
+
+                                        </div>
+
+                                    </div>
+                                    <div class="ref-infos" for="reference0" style="background-color:rgb(116,198,198);">
+                                        <div class="brackets brackets_1 bg_color_0">
+                                            <div>  </div>
+                                            <div>  </div>
+                                        </div>
+                                        <div class="brackets brackets_2 bg_color_0">
+                                            <div>  </div>
+                                            <div>  </div>
+                                        </div>
+                                        <div class="brackets brackets_3 bg_color_0">
+                                            <div>  </div>
+                                            <div>  </div>
+                                        </div>
+                                        <div class="ref-infos-container">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at est nec orci euismod tristique a eu metus. Cras pharetra diam at velit
+                                        </div>
+                                        <div class="ref-infos-container">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at est nec orci euismod tristique a eu metus. Cras pharetra diam at velit
+                                        </div>
+                                        <div class="ref-infos-container" style="border:none;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at est nec orci euismod tristique a eu metus. Cras pharetra diam at velit
+                                        </div>
+                                    </div>
+                                    <div class="ref-resources" for="reference3">
+                                        <img src="references/sfl/close.png" for="reference3" class="ref-close" />
+                                        <div class="swipe">
+                                            <div class="swipe-wrap">
+                                                <div>
+                                                    <div class="ref-image" style="background-image:url('references/dp/images/image1.jpg')"></div>
+                                                </div>
+                                                <div>
+                                                    <div class="ref-image" style="background-image:url('references/dp/images/image2.jpg')"></div>
+                                                </div>
+                                                <div>
+                                                    <div class="ref-image" style="background-image:url('references/dp/images/image3.jpg')"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img class="ref-fleche-gauche" src="img/fleche_gauche.png" alt="Défiler à gauche" />
+                                        <img class="ref-fleche-droite" src="img/fleche_droite.png" alt="Défiler à droite" />
+                                    </div>
+                                    <div class="ref-index" id="reference2">
+                                        <img src="references/qu4drans/main.jpg" />
+                                        <div class="blur_ref-index blur_ref-index_2"></div>
+                                        <div class="ref-title">
+                                            <h2>Customer name</h2>
+                                        </div>
+                                        <div class="slider_text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Morbi at est nec orci euismod tristique a eu metus. Cras
+                                            pharetra diam at velit commodo vehicula. Etiam hendrerit
+                                            augue rhoncus pulvinar sodales. Nam tincidunt feugiat urna,
+                                            suscipit scelerisque erat luctus faucibus. Curabitur ultricies
+                                            ipsum felis, sed Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Morbi at est nec orci euismod tristique a eu metus. Cras pharetra diam at
+                                            velit comm... hicula. Etiam hendrerit augue rhoncus pulvinar
+
+                                        </div>
+                                    </div>
+                                    <div class="ref-infos" for="reference2" style="background-color:rgb(194,151,143);">
+
+                                        <div class="brackets brackets_1 bg_color_2">
+                                            <div>  </div>
+                                            <div>  </div>
+                                        </div>
+                                        <div class="brackets brackets_2 bg_color_2">
+                                            <div>  </div>
+                                            <div>  </div>
+                                        </div>
+                                        <div class="brackets brackets_3 bg_color_2">
+                                            <div>  </div>
+                                            <div>  </div>
+                                        </div>
+                                        <div class="ref-infos-container">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at est nec orci euismod tristique a eu metus. Cras pharetra diam at velit
+                                        </div>
+                                        <div class="ref-infos-container">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at est nec orci euismod tristique a eu metus. Cras pharetra diam at velit
+                                        </div>
+                                        <div class="ref-infos-container" style="border:none;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at est nec orci euismod tristique a eu metus. Cras pharetra diam at velit
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div id="tRefCol2">
+                                    <div class="ref-resources" for="reference0">
+                                        <img src="references/sfl/close.png" for="reference0" class="ref-close" />
+                                        <div class="swipe">
+                                            <div class="swipe-wrap">
+                                                <div>
+                                                    <div class="ref-image" style="background-image:url('references/sfl/images/image1.jpg')"></div>
+                                                </div>
+                                                <div>
+                                                    <div class="ref-image" style="background-image:url('references/sfl/images/image2.jpg')"></div>
+                                                </div>
+                                                <div>
+                                                    <div class="ref-image" style="background-image:url('references/sfl/images/image2.jpg')"></div>
+                                                </div>
+                                                <div>
+                                                    <div class="ref-image" style="background-image:url('references/sfl/images/image2.jpg')"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img class="ref-fleche-gauche" src="img/fleche_gauche.png" alt="Défiler à gauche" />
+                                        <img class="ref-fleche-droite" src="img/fleche_droite.png" alt="Défiler à droite" />
+                                    </div>
+                                    <div class="ref-index" id="reference1">
+                                        <img src="references/fft/main.jpg" />
+                                        <div class="blur_ref-index blur_ref-index_1"></div>
+                                        <div class="ref-title">
+                                            <h2>Customer name in English</h2>
+                                        </div>
+                                    </div>
+                                    <div class="ref-infos" for="reference1">
+                                        <div class="ref-infos-container">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at est nec orci euismod tristique a eu metus. Cras pharetra diam at velit
+                                        </div>
+                                        <div class="ref-infos-container">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at est nec orci euismod tristique a eu metus. Cras pharetra diam at velit
+                                        </div>
+                                        <div class="ref-infos-container" style="border:none;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at est nec orci euismod tristique a eu metus. Cras pharetra diam at velit
+                                        </div>
+                                    </div>
+                                    <div class="ref-resources" for="reference2">
+                                        <img src="references/sfl/close.png" for="reference2" class="ref-close" />
+                                        <div class="swipe">
+                                            <div class="swipe-wrap">
+                                                <div>
+                                                    <div class="ref-image" style="background-image:url('references/qu4drans/images/image1.jpg')"></div>
+                                                </div>
+                                                <div>
+                                                    <div class="ref-image" style="background-image:url('references/qu4drans/images/image2.jpg')"></div>
+                                                </div>
+                                                <div>
+                                                    <div class="ref-image" style="background-image:url('references/qu4drans/images/image2.jpg')"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img class="ref-fleche-gauche" src="img/fleche_gauche.png" alt="Défiler à gauche" />
+                                        <img class="ref-fleche-droite" src="img/fleche_droite.png" alt="Défiler à droite" />
+                                    </div>
+                                    <div class="ref-index" id="reference3">
+                                        <img src="references/dp/main.jpg" />
+                                        <div class="blur_ref-index blur_ref-index_3"></div>
+                                        <div class="ref-title">
+                                            <h2>Customer name in English</h2>
+                                        </div>
+                                    </div>
+                                    <div class="ref-infos" for="reference3">
+
+                                        <div class="ref-infos-container">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at est nec orci euismod tristique a eu metus. Cras pharetra diam at velit
+                                        </div>
+                                        <div class="ref-infos-container">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at est nec orci euismod tristique a eu metus. Cras pharetra diam at velit
+                                        </div>
+                                        <div class="ref-infos-container" style="border:none;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at est nec orci euismod tristique a eu metus. Cras pharetra diam at velit
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="clear"></div>
+                            </section>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="contact">
         <div class="contactUs">
 
@@ -268,35 +497,41 @@
                         <label class="sr-only" for="exampleInputAmount"></label>
                         <div class="input-group">
                             <div class="input-group-addon oneIn">Position:</div>
-                            <input type="text" class="form-control" id="exampleInputAmount">
-                        </div>
+                            <input type="text" class="form-control" id="exampleInputAmount" name="Position" data-patern="^[а-яА-ЯёЁa-zA-Z]+$" data-msgid="posid" data-msg="Incorrect Position">
+                            
+                        </div><span id="posid">test</span>
                     </div>
+                    
                     <!------------------------------->
                     <div class="form-group two">
                         <label class="sr-only" for="exampleInputAmount"></label>
                         <div class="input-group">
                             <div class="input-group-addon oneIn">*Name:</div>
-                            <input type="text" class="form-control" id="exampleInputAmount">
-                        </div>
+                            <input type="text" class="form-control" id="exampleInputAmount" name="Name" data-patern="^[а-яА-ЯёЁa-zA-Z]+$" data-msgid="nameid" data-msg="Incorrect Posiion">
+                            
+                        </div><span id="nameid">test</span>
                     </div>
+                    
                     <!------------------------------->
                     <div class="form-group two">
                         <label class="sr-only" for="exampleInputAmount"></label>
                         <div class="input-group">
                             <div class="input-group-addon oneIn">*Tel:</div>
-                            <input type="text" class="form-control" id="exampleInputAmount">
-                        </div>
+                            <input type="text" class="form-control" id="exampleInputAmount" name="Tel" data-patern="^\+(?:[0-9]●?){6,14}[0-9]$" data-msgid="telid" data-msg="Incorrect Tel">
+                            
+                        </div><span id="telid">test</span>
                     </div>
-
+                    
                     <!------------------------------->
                     <div class="form-group two">
                         <label class="sr-only" for="exampleInputAmount"></label>
                         <div class="input-group">
                             <div class="input-group-addon oneIn">*Email:</div>
-                            <input type="text" class="form-control" id="exampleInputAmount">
-                        </div>
+                            <input type="text" class="form-control" id="exampleInputAmount" name="Email" data-patern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" data-msgid="emailid" data-msg="Incorrect Email">
+                            
+                        </div><span id="emailid">test</span>
                     </div>
-
+                    
                     <!------------------------------->
                     <textarea>Connect</textarea>
                     <!------------------------------->
@@ -307,7 +542,7 @@
                     <div class="select">
                         <label class="sr-only" for="exampleInputAmount"></label>
                         <div class="Input-group-name oneIn">Services:</div>
-                            <div class="form-control" id="checkboxClick">Select...</div>
+                            <div class="form-control" id="checkboxClick">Select... <span>▼</span></div>
                             <div id="checkbox-holder">
                                 <table>
                                     <tr><td><input type="checkbox" id="1" /><label for="1">LOREM IMPUS</label></td></tr>
@@ -340,7 +575,7 @@
                         <p>Challenge us with a project</p>
 
                     </div>
-                    <a href="#" class="button">Send</a>
+                    <input type="submit" class="button" value="send"/>
                 </form>
 
             </div>
@@ -353,17 +588,17 @@
         </div>
         <p><i class="fa fa-copyright"></i> 2015 Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
         <ul class="nav nav-pills navbar-center">
-            <li role="presentation"><a href="#welcome">Welcom</a></li>
+            <li role="presentation"><a href="#welcome" id="scroll">Welcom</a></li>
             <li>/</li>
-            <li role="presentation"><a href="#what">What</a></li>
+            <li role="presentation"><a href="#what" id="scroll">What</a></li>
             <li>/</li>
-            <li role="presentation"><a href="#how">How</a></li>
+            <li role="presentation"><a href="#how" id="scroll">How</a></li>
             <li>/</li>
-            <li role="presentation"><a href="#service">Services</a></li>
+            <li role="presentation"><a href="#service" id="scroll">Services</a></li>
             <li>/</li>
-            <li role="presentation"><a href="#">Case studies</a></li>
+            <li role="presentation"><a href="#" id="scroll">Case studies</a></li>
             <li>/</li>
-            <li role="presentation"><a href="#">Contact</a></li>
+            <li role="presentation"><a href="#" id="scroll">Contact</a></li>
         </ul>
         
         <div class="social">
@@ -376,9 +611,12 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery.scrolling-parallax.js"></script>
+    <script src="js/swipe.js"></script>
     <script src="js/FormJS.js"></script>
     <script src="js/CustomJs.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
