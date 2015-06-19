@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- Custom CSS -->
     <link href="Custom.css" rel="stylesheet" />
-    <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
     
     <!-- Google fonts -->
     <link href='http://fonts.googleapis.com/css?family=Alef' rel='stylesheet' type='text/css'>
@@ -35,7 +34,7 @@
                     <li role="presentation"><a href="#how">How</a></li><li>/</li>
                     <li role="presentation"><a href="#service">Services</a></li><li>/</li>
                     <li role="presentation"><a href="#">Case studies</a></li><li>/</li>
-                    <li role="presentation"><a href="#">Contact</a></li>
+                    <li role="presentation"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -183,55 +182,45 @@
                         <p>What do you desire for?</p>
                     </div>
                     <div class="hexa-group">
-                        <div class="hex hex-2">
-                            <div class="inner">
+                        <div class="hex hex-2" id="hexa2">
                                 <h4>Branding</h4>
                                 <hr />
                                 <p>+</p>
-                            </div>
                             <div class="corner-1"></div>
                             <div class="corner-2"></div>
                         </div>
-                        <div class="hex hex-3">
-                            <div class="inner">
-                                <h4>Intarective & Web</h4>
-                                <hr />
-                                <p>+</p>
-                            </div>
+                        <div class="hex hex-3" id="hexa3">
+                            <h4>Intarective & Web</h4>
+                            <hr />
+                            <p>+</p>
                             <div class="corner-1"></div>
                             <div class="corner-2"></div>
                         </div>
-                        <div class="hex hex-4">
-                            <div class="inner">
-                                <h4>Consultancy & Managment</h4>
-                                <hr />
-                                <p>+</p>
-                            </div>
+                        <div class="hex hex-4" id="hexa4">
+                            <h4>Consultancy & Managment</h4>
+                            <hr />
+                            <p>+</p>
                             <div class="corner-1"></div>
                             <div class="corner-2"></div>
                         </div>
-                        <div class="hex hex-5">
-                            <div class="inner">
-                                <h4>Marketing</h4>
-                                <hr />
-                                <p>+</p>
-                            </div>
+                        <div class="hex hex-5" id="hexa5">
+                            <h4>Marketing</h4>
+                            <hr />
+                            <p>+</p>
                             <div class="corner-1"></div>
                             <div class="corner-2"></div>
                         </div>
-                        <div class="hex hex-6">
-                            <div class="inner">
-                                <h4>Content generation</h4>
-                                <hr />
-                                <p>+</p>
-                            </div>
+                        <div class="hex hex-6" id="hexa6">
+                            <h4>Content generation</h4>
+                            <hr />
+                            <p>+</p>
                             <div class="corner-1"></div>
                             <div class="corner-2"></div>
                         </div>
                     </div>
                     <hr />
                     <div class="all-serv">All Services</div>
-                    <div class="cicle-group-info">
+                    <div id="cicle-group-info">
                         <div class="circle-info filter-brand">Lorem ipsum dolor sit amet</div>
                         <div class="circle-info filter-brand">Lorem ipsum dolor sit amet</div>
                         <div class="circle-info filter-brand">Lorem ipsum dolor sit amet</div>
@@ -255,6 +244,105 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contactUs">
+
+
+            <div class="contName">
+                Contact Us
+            </div>
+            <div class="chapter">
+                Connect to 250V <br /> of brain power
+            </div>
+            <div class="circle">
+                <img src="img/lightning.png" />
+            </div>
+            <div class="formContact">
+
+
+                <form class="form-inline">
+
+                    <div class="form-group">
+                        <label class="sr-only" for="exampleInputAmount"></label>
+                        <div class="input-group">
+                            <div class="input-group-addon oneIn">Position:</div>
+                            <input type="text" class="form-control" id="exampleInputAmount">
+                        </div>
+                    </div>
+                    <!------------------------------->
+                    <div class="form-group two">
+                        <label class="sr-only" for="exampleInputAmount"></label>
+                        <div class="input-group">
+                            <div class="input-group-addon oneIn">*Name:</div>
+                            <input type="text" class="form-control" id="exampleInputAmount">
+                        </div>
+                    </div>
+                    <!------------------------------->
+                    <div class="form-group two">
+                        <label class="sr-only" for="exampleInputAmount"></label>
+                        <div class="input-group">
+                            <div class="input-group-addon oneIn">*Tel:</div>
+                            <input type="text" class="form-control" id="exampleInputAmount">
+                        </div>
+                    </div>
+
+                    <!------------------------------->
+                    <div class="form-group two">
+                        <label class="sr-only" for="exampleInputAmount"></label>
+                        <div class="input-group">
+                            <div class="input-group-addon oneIn">*Email:</div>
+                            <input type="text" class="form-control" id="exampleInputAmount">
+                        </div>
+                    </div>
+
+                    <!------------------------------->
+                    <textarea>Connect</textarea>
+                    <!------------------------------->
+
+
+
+
+                    <div class="select">
+                        <label class="sr-only" for="exampleInputAmount"></label>
+                        <div class="input-group">
+                            <div class="input-group-addon oneIn">Services:</div>
+                            <div class="form-control">Select...</div>
+                            <div class="checkbox-holder">
+                                <input type="checkbox" name="1" value="lorem"/>
+                                <input type="checkbox" name="2" />
+                                <input type="checkbox" name="3" />
+                                <input type="checkbox" name="4" />
+                                <input type="checkbox" name="5" />
+                                <input type="checkbox" name="6" />
+                                <input type="checkbox" name="7" />
+                                <input type="checkbox" name="8" />
+                                <input type="checkbox" name="9" />
+                                <input type="checkbox" name="10" />
+                                <input type="checkbox" name="11" />
+                                <input type="checkbox" name="12" />
+                                <input type="checkbox" name="13" />
+                                <input type="checkbox" name="14" />
+                                <input type="checkbox" name="15" />
+                                <input type="checkbox" name="16" />
+                                <input type="checkbox" name="17" />
+                                <input type="checkbox" name="18" />
+                                <input type="checkbox" name="19" />
+                                <input type="checkbox" name="20" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bigline">
+
+                        <p>Challenge us with a project</p>
+
+                    </div>
+                    <a href="#" class="button">Send</a>
+                </form>
+
+            </div>
+
         </div>
     </section>
     <footer>
@@ -287,8 +375,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
     <script src="js/bootstrap.js"></script>
-<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/jquery.scrolling-parallax.js"></script>
+    <script src="js/FormJS.js"></script>
     <script src="js/CustomJs.js"></script>
 </body>
 </html>

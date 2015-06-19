@@ -1,8 +1,9 @@
 ﻿/* 1.Header
    2.Welcome
-   3. How
+   3.How
    4.Service
-   5.Footer
+   6.Contact Us
+   7.Footer
    #. Conecting Fonts
    #. Geometric
 */
@@ -11,7 +12,7 @@
 body {
 }
  /*
-     1.Header
+     -----------------------------1.Header-----------------------------
  */
  #header{
      display:block;
@@ -46,7 +47,7 @@ body {
      background:rgba(0,0,0,0.5);
  }
 /*
-    2.Welcome
+    -----------------------------2.Welcome-----------------------------
 */
 #welcome{
     display:block;
@@ -349,7 +350,7 @@ div.figures img{
   margin-top: 45px;
 }
 /*
-    3. How
+    -----------------------------3. How-----------------------------
 */
 #how{
     display:block;
@@ -493,7 +494,7 @@ span.bold-span{
   margin-top: 45px;
 }
 /*
-    Line prop
+    -----------------------------Line prop-----------------------------
 */
 .vector-line-1{
   width: 150px;
@@ -552,7 +553,7 @@ span.bold-span{
   border-radius: 100px;
 }
 /*
-    4.Service
+    -----------------------------4.Service-----------------------------
 */
 #service{
     display:block;
@@ -611,13 +612,203 @@ span.bold-span{
   color: #fff;
   font-weight: 300;
   cursor:pointer;
+  display:none;
+  transition:width 1s,height 1s;
+  position:relative;
+}
+#active-circle{
+  width: 300px;
+  height: 300px;
+  border-color:#6d5ea5;
 }
 .circle-info:hover{
     border-color:#6d5ea5;
     color:#6d5ea5;
 }
+#cicle-group-info{
+    width:100%;
+    min-height:150px;
+}
+.closeIcon{
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  border: 2px solid #6d5ea5;
+  border-radius: 100%;
+  color: #6d5ea5;
+  text-align: center;
+  font-size: 33px;
+  top: 0px;
+  opacity: 0;
+  transition: opacity 1s;
+  font-family: monospace;
+  line-height: 34px;
+  font-weight: bold;
+}
 /*
-    5.Footer
+    -----------------------------6.Contact Us-----------------------------
+*/
+
+.contactUs {
+    width: 700px;
+    border: 0 solid green;
+    margin: auto;
+}
+
+.contName {
+    width: 300px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-size: 50px;
+    margin: auto;
+    color: white;
+    font-family: ChunkFive;
+    padding-bottom: 7px;
+    text-align: center;
+}
+
+.chapter {
+    width: 300px;
+    border: 0 solid red;
+    color: white;
+    font-family: Alef;
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid white;
+}
+
+.contactUs .circle {
+    width: 70px;
+    height: 70px;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: auto;
+    position: relative;
+    top: -35px;
+    background-color: #323232;
+    background-repeat: no-repeat;
+}
+
+.contactUs img {
+    width: 42px;
+    height: 62px;
+    margin-left: 13px;
+    margin-top: 4px;
+}
+
+.formContact {
+    width: 570px;
+    border: 0 solid red;
+    margin: auto;
+    height: 500px;
+}
+
+.oneIn {
+    color: #5dcbcb;
+    background-color: #f1f1f1;
+    font-family: Alef !important;
+    font-size: 18px;
+    height: 42px;
+}
+
+.form-control {
+    width: 180px !important;
+    height: 42px;
+    background-color: #f1f1f1;
+    font-family: Alef;
+    font-size: 20px;
+
+}
+
+.form-group {
+    margin-bottom: 30px !important;
+}
+
+.two {
+    border: 0 solid red;
+}
+
+.tel {
+    border: 0 solid red;
+    width: 277px;
+}
+
+.three {
+    float: left;
+    width: 180px !important;
+    height: 42px;
+    background-color: #f1f1f1;
+}
+
+.input-group-addon {
+    width: 100px !important;
+}
+
+textarea {
+    border-radius: 3px;
+    width: 565px;
+    background-color: #f1f1f1;
+    height: 120px;
+    font-family: Alef;
+    color: #5dcbcb;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.select {
+    margin-left: 150px;
+}
+
+.bigline {
+    border: 0 solid red;
+    width: 330px;
+    height: 35px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+a.button {
+    text-decoration: none;
+    text-align: center;
+    padding: 11px 32px;
+    -webkit-border-radius: 38px;
+    -moz-border-radius: 38px;
+    border-radius: 38px;
+    font: 26px Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    background: #64b2b3;
+    -webkit-box-shadow: 0px 0px 2px #64b2b3, inset 0px 0px 1px #ffffff;
+    -moz-box-shadow: 0px 0px 2px #64b2b3, inset 0px 0px 1px #ffffff;
+    margin-left: 220px;
+    font-family: Alef;
+    font-size: 25px;
+}
+.bigline p{
+     font-size: 20px;
+  font-family: Alef;
+  font-style: italic;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+ }
+.checkbox-holder{
+  width: 180px;
+  height: 103px;
+  background-color: #555;
+  overflow:auto;
+}
+.checkbox-holder input{
+    display:block;
+}
+
+/*
+    -----------------------------7.Footer-----------------------------
 */
 footer{
   width: 100%;
@@ -689,15 +880,16 @@ footer .navbar-center li a:hover{
 
 
 
+
 /*
-    #.Conecting Fonts
+    -----------------------------#.Conecting Fonts-----------------------------
 */
 @font-face {
     font-family: 'Chunkfive';
     src: url('fonts/ChunkFive/Chunkfive.otf') format('opentype');
 }
 /*
-    #. Geometric
+    -----------------------------#. Geometric-----------------------------
 */
 .hex {
 	/*width:300px;
@@ -714,6 +906,7 @@ footer .navbar-center li a:hover{
 	margin:25px 11px;
 	text-align:center;
 	zoom:1;
+    cursor: pointer;
 }
 		
 .hex.hex-gap {
@@ -733,6 +926,7 @@ footer .navbar-center li a:hover{
 
 	.hex .corner-1,
 	.hex .corner-2 {
+        cursor:pointer;
 		position: absolute;
 		top: 0px;
         left:0px;
@@ -848,7 +1042,7 @@ footer .navbar-center li a:hover{
         height: 114px;
 	}
 /*
-    HEX 2
+    -----------------------------HEX 2-----------------------------
 */
     .hex.hex-2 {
 		background-color:#1a1a1a;
@@ -866,7 +1060,6 @@ footer .navbar-center li a:hover{
     .hex-2 h4{
         color:#5f9e9e;
           padding-top: 27px;
-          cursor:pointer;
     }
     .hex-2 hr{
          border-color:#5f9e9e
@@ -875,7 +1068,7 @@ footer .navbar-center li a:hover{
         color:#5f9e9e
     }
 /*
-    HEX 3
+    -----------------------------HEX 3-----------------------------
 */
     .hex.hex-3 {
 		background-color:#1a1a1a;
@@ -893,7 +1086,6 @@ footer .navbar-center li a:hover{
     .hex-3 h4{
         color:#7e505e;
           padding-top: 27px;
-          cursor:pointer;
     }
     .hex-3 hr{
          border-color:#7e505e
@@ -902,7 +1094,7 @@ footer .navbar-center li a:hover{
         color:#7e505e
     }
 /*
-    HEX 4
+   ----------------------------- HEX 4-----------------------------
 */
     .hex.hex-4 {
 		background-color:#1a1a1a;
@@ -919,7 +1111,6 @@ footer .navbar-center li a:hover{
         border-right:1px solid #5b5086;}
     .hex-4 h4{
         color:#5b5086;
-        cursor:pointer;
     }
     .hex-4 hr{
          border-color:#5b5086
@@ -928,7 +1119,7 @@ footer .navbar-center li a:hover{
         color:#5b5086
     }
 /*
-    HEX 5
+    -----------------------------HEX 5-----------------------------
 */
     .hex.hex-5 {
 		background-color:#1a1a1a;
@@ -946,7 +1137,6 @@ footer .navbar-center li a:hover{
     .hex-5 h4{
         color:#c27567;
         padding-top: 27px;
-        cursor:pointer;
     }
     .hex-5 hr{
          border-color:#c27567
@@ -955,7 +1145,7 @@ footer .navbar-center li a:hover{
         color:#c27567
     }
 /*
-    HEX 6
+    -----------------------------HEX 6-----------------------------
 */
     .hex.hex-6 {
 		background-color:#1a1a1a;
@@ -973,7 +1163,6 @@ footer .navbar-center li a:hover{
     .hex-6 h4{
         color:#a08a31;
         padding-top: 27px;
-        cursor:pointer;
     }
     .hex-6 hr{
         border-color:#a08a31
@@ -982,7 +1171,7 @@ footer .navbar-center li a:hover{
         color:#a08a31
     }
 /*
-    --------------------------------------------
+ ----------------------------------------------------------
 */
     
     .hexa-group{
@@ -991,11 +1180,14 @@ footer .navbar-center li a:hover{
   left: -84px;
     width: 100%;
   height: 400px;
+  z-index:0;
     }
     .hexa-group .hex p{
-          font-size: 30px;
+  font-size: 30px;
   font-family: Aria;
+  width: 18px;
   font-weight: bold;
+  cursor: pointer;
     }
     .hexa-group .hex h4{
   width: 100%;
@@ -1005,6 +1197,7 @@ footer .navbar-center li a:hover{
   font-size: 20px;
   font-family: Alef;
   font-weight: normal;
+  cursor:pointer;
     }
 
     .hexa-group .hex hr{
