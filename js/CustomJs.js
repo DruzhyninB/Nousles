@@ -22,19 +22,28 @@ function start() {
     document.getElementById("hexa4").addEventListener("click", hex4Click, true);
     document.getElementById("hexa5").addEventListener("click", hex5Click, true);
     document.getElementById("hexa6").addEventListener("click", hex6Click, true);
+    //Circle expand
     document.getElementById("cicle-group-info").addEventListener("click", CircleExpand, true);
-
+    //Expande checkbox list
+    document.getElementById("checkboxClick").addEventListener("click", checkboxExpand, false);
+    //Compression checkbox list
+    document.getElementById("checkbox-holder").addEventListener("blur", checkboxCompression, true);
     function CircleExpand(e) {
         var elem = e.target;
         var closeIcon = document.createElement("div");
         closeIcon.className = "closeIcon";
         closeIcon.innerHTML = "X"
         if (elem.className !== "closeIcon") {
-            if (elem.querySelector("#active-circle .closeIcon") == null){elem.id = "active-circle";
-            elem.appendChild(closeIcon);
-            elem.querySelector("#active-circle .closeIcon").style.opacity = 1;
-            } else {
-                //здесь код с занесение отметки в список чек боксов
+            if (elem.id !== "cicle-group-info") { 
+                if (elem.querySelector("#active-circle .closeIcon") == null) {
+                    elem.id = "active-circle";
+                    elem.appendChild(closeIcon);
+                    elem.querySelector("#active-circle .closeIcon").style.opacity = 1;
+                } else {
+                    var selectedId = elem.dataset.id;
+                    document.get
+
+            } 
         }
             
         } else {
@@ -105,4 +114,13 @@ function start() {
             }
         }
     }
+
+    //Expande chexbox list(function)
+    function checkboxExpand() {
+        document.getElementById("checkbox-holder").style.height = "150px";
+    };
+    function checkboxCompression() {
+        document.getElementById("checkbox-holder").style.height = "0px";
+    }
+
 };
