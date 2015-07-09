@@ -36,11 +36,10 @@ function resetFormElem() {
 
 function validateform(e) {
     var validFlag = false;
-    for (var i = 0; i < form.elements.length; i++) {//поиск елемента в котором была допущена ошибка
+    for (var i = 0; i < form.elements.length; i++) {
         var ele = form.elements[i];
         if (ele.parentElement.className == "input-group formError") validFlag = true;
     }
-    //Проверка заполнености полей
     if (form.Name.value == "") {
         event.preventDefault();
         document.getElementById("nameid").innerHTML = "Empty fields";
@@ -69,13 +68,7 @@ function validateform(e) {
                     setTimeout(function () { document.getElementById("posid").style.opacity = "0"; }, 5000);
                     validFlag = true;
                 }
-            
-            
-        
-
-    
-
-    if (!validFlag) {
+       if (!validFlag) {
 
         form.Posiion.value = "";
         form.Name.value = "";

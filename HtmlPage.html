@@ -1,94 +1,72 @@
-﻿<!doctype html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8">
-    <title>jQuery UI Slider - Vertical slider</title>
-
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-
-    
 
     <style>
-        span.ui-slider-handle {
-            background-image: url('range.png') !important;
-            border: none !important;
-            border-radius: 0 !important;
-            width: 26px !important;
-            height: 26px !important;
-            left: -9px !important;
-            -webkit-box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.7);
-            -moz-box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.7);
-            box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.7);
+
+      @-moz-keyframes animation 
+        {
+
         }
 
-        .ui-widget-content {
-            border-radius: 0 !important;
-            border-color: #212123 !important;
-            width: 8px !important;
-            height: 215px !important;
+@-webkit-keyframes animation 
+        {
+
         }
 
-        #slider-vertical-left.ui-widget-content {
-            background: -webkit-linear-gradient(left, #0f0f11 0, #121116 50%, #0f0f11 100%) 50% 50% repeat-x !important;
-            left: 200px !important;
-            top: 10px !important;
-            z-index: 1 !important;
+@keyframes animation 
+        {
+            from {
+                opacity:0;
+            }
+
+            to {
+                opacity:1;
+            }
         }
 
-        #slider-vertical-right.ui-widget-content {
-            background: -webkit-linear-gradient(left, #0c0c0e 0, #121116 50%, #0c0c0e 100%) 50% 50% repeat-x !important;
-            left: 580px !important;
-            top: -207px !important;
-            z-index: 2 !important;
+        span {
+            color: red;
+            -moz-animation-name: animation;
+            -o-animation-name: animation;
+            -webkit-animation-name: animation;
+            animation-name: animation;
+
+            -moz-animation-duration: 2s;
+            -o-animation-duration: 2s;
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s;
         }
 
-        .ui-widget-content div.ui-slider-range {
-            border-radius: 0 !important;
-            outline: none !important;
-        }
-
-        #slider-vertical-left.ui-widget-content div.ui-slider-range {
-            background: -webkit-linear-gradient(left, #4f4522 0, #d8b93c 50%, #4f4522 100%) 50% 50% repeat-x !important;
-        }
-
-        #slider-vertical-right.ui-widget-content div.ui-slider-range {
-            background: -webkit-linear-gradient(left, #572526 0, #f35051 50%, #572526 100%) 50% 50% repeat-x !important;
-        }
     </style>
 
-    <script>
-
-        $(function () {
-            $("#slider-vertical-left, #slider-vertical-right").slider({
-                orientation: "vertical",
-                range: "min",
-                min: 0,
-                max: 100,
-                value: 60,
-                slide: function (event, ui) {
-                    $("#amount").val(ui.value);
-                }
-            });
-
-            $("#amount").val($("#slider-vertical").slider("value"));
-        });
-    </script>
+    <title></title>
 </head>
 <body>
 
+    <script>
+        window.onload = function () {
+
+            f = function () {
+
+                document.getElementById("div").innerHTML = "<span> Hello world </span>"
+
+            }
+
+            document.getElementById("div").addEventListener("click", f, false);
+
+        }
+
+        
+    </script>
 
 
-    <div id="slider-vertical-left">
+
+    <div id="div" style="width:100px; height:100px; background: blue;">
+
+
 
     </div>
-    <p id="amount"></p>
-    <div id="slider-vertical-right">
-
-    </div>
-
 
 </body>
 </html>

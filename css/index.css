@@ -1,13 +1,26 @@
 body{
 	margin:0px;
-	background:#FFF;
+	/*background:#FFF;*/
 }
 
+.col-lg-12 
+{
+    padding:0px;
+    float:none !important;
+    
 
-a{
-	text-decoration:none;
-	color: inherit;
 }
+
+.col-lg-4 
+{
+   float:none !important;
+   
+}
+
+/*img[src^='img/bg4.jpg'] 
+{
+    height:102% !important;
+}*/
 
 a img{
 	border:none;
@@ -15,6 +28,11 @@ a img{
 
 .clear{
 	clear:both;
+}
+
+#header 
+{
+    /*z-index:55;*/
 }
 
 #header, .tactile-section, #footer, #nav, #content{
@@ -137,28 +155,46 @@ a img{
 	position:relative;
 }
 
-body:not(.ipad) #nav.open .logo{
-	-webkit-animation: ShowBounce 1.5s both linear;
+body:not(.ipad) #nav.open .logo {
+    -webkit-animation: ShowBounce 1.5s both linear;
+    -moz-animation: ShowBounce 1.5s both linear;
+    -o-animation: ShowBounce 1.5s both linear;
+    animation: ShowBounce 1.5s both linear;
 }
 
-body:not(.ipad) #nav.open .nav-menu-item:nth-child(1){
-	-webkit-animation:ShowNavItem 0.5s 0.2s both linear;
+body:not(.ipad) #nav.open .nav-menu-item:nth-child(1) {
+    -webkit-animation: ShowNavItem 0.5s 0.2s both linear;
+    -moz-animation: ShowNavItem 0.5s 0.2s both linear;
+    -o-animation: ShowNavItem 0.5s 0.2s both linear;
+    animation: ShowNavItem 0.5s 0.2s both linear;
 }
 
-body:not(.ipad) #nav.open .nav-menu-item:nth-child(2){
-	-webkit-animation:ShowNavItem 0.5s 0.1s both linear;
+body:not(.ipad) #nav.open .nav-menu-item:nth-child(2) {
+    -webkit-animation: ShowNavItem 0.5s 0.1s both linear;
+    -moz-animation: ShowNavItem 0.5s 0.1s both linear;
+    -o-animation: ShowNavItem 0.5s 0.1s both linear;
+    animation: ShowNavItem 0.5s 0.1s both linear;
 }
 
-body:not(.ipad) #nav.open .nav-menu-item:nth-child(3){
-	-webkit-animation:ShowNavItem 0.5s both linear;
+body:not(.ipad) #nav.open .nav-menu-item:nth-child(3) {
+    -webkit-animation: ShowNavItem 0.5s both linear;
+    -moz-animation: ShowNavItem 0.5s both linear;
+    -o-animation: ShowNavItem 0.5s both linear;
+    animation: ShowNavItem 0.5s both linear;
 }
 
-body:not(.ipad) #nav.open .nav-menu-item:nth-child(4){
-	-webkit-animation:ShowNavItem 0.5s 0.1s both linear;
+body:not(.ipad) #nav.open .nav-menu-item:nth-child(4) {
+    -webkit-animation: ShowNavItem 0.5s 0.1s both linear;
+    -moz-animation: ShowNavItem 0.5s 0.1s both linear;
+    -o-animation: ShowNavItem 0.5s 0.1s both linear;
+    animation: ShowNavItem 0.5s 0.1s both linear;
 }
 
-body:not(.ipad) #nav.open .nav-menu-item:nth-child(5){
-	-webkit-animation:ShowNavItem 0.5s 0.2s both linear;
+body:not(.ipad) #nav.open .nav-menu-item:nth-child(5) {
+    -webkit-animation: ShowNavItem 0.5s 0.2s both linear;
+    -moz-animation: ShowNavItem 0.5s 0.2s both linear;
+    -o-animation: ShowNavItem 0.5s 0.2s both linear;
+    animation: ShowNavItem 0.5s 0.2s both linear;
 }
 
 .nav-menu-item>a{
@@ -215,8 +251,10 @@ body:not(.ipad) #nav.open .nav-menu-item:nth-child(5){
 #qualifs{
 	border:0px;
 	border-collapse:collapse;
+
 	border-separate:0px;
-	width:100%;
+	
+    width:100%;
 	height:650px;
 	list-style:none;
 	margin:0px;
@@ -814,17 +852,18 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
 
 .ref-index>img{
 	position:absolute;
+    height:inherit !important;
 }
 
 .ref-resources.open, .ref-infos.open{
 	display:block;
 }
 
-.ref-index.open, .ref-infos.open
+.ref-infos.open,.ref-index.open
 {
-    width:400px;
+    width:415px;
+   
 }
-
 #tRefCol2 .ref-infos.open
 {
  background-color:rgb(140, 87,103)!important;
@@ -838,16 +877,16 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
 
 #tRefCol2 .ref-resources.open 
 {
-    width:740px;
-    left: -170px;
+    width:770px;
+    left: -185px;
+    z-index:1;
 }
 
 #tRefCol1 .ref-resources.open 
 {
-    width:740px;
+    width:770px;
     left: 0;
 }
-
 .blur_ref-index {
     position: absolute;
     left: 0;
@@ -855,8 +894,8 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
     z-index: 1;
     
     
-    width: 570px;
-    height: 350px;
+    width: 585px;
+    height: 359px;
 
     opacity: 0.9;
     -moz-transition: opacity .5s ease-out;
@@ -874,22 +913,39 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
 
 .blur_ref-index_0 
 {
-    background-color: rgb(116,198,198);
+    background:-moz-linear-gradient(left ,#386663, #74c6c6);
+    background:-webkit-linear-gradient(left ,#386663, #74c6c6);
+    background:-o-linear-gradient(left ,#386663, #74c6c6);
+    background:-ms-linear-gradient(left ,#386663, #74c6c6);
+        
+    /*background: linear-gradient(to left ,#386663, #74c6c6);*/ 
 }
 
 .blur_ref-index_1 
 {
-     background-color: rgb(86,48,59);
+     background: -webkit-linear-gradient(left ,#9d6173, #4f2734);
+     background: -o-linear-linear-gradient(left ,#9d6173, #4f2734);
+     background: -ms-linear-linear-gradient(left ,#9d6173, #4f2734);
+     background: -moz-linear-linear-gradient(left ,#9d6173, #4f2734);
+     /*background: linear-gradient(left ,#9d6173, #4f2734);*/  
 }
 
 .blur_ref-index_2 
 {
-     background-color: rgb(194,151,143);
+     background: -webkit-linear-gradient(left ,#696344, #be8e85);
+     background: -o-linear-gradient(left ,#696344, #be8e85);
+     background: -ms-linear-gradient(left ,#696344, #be8e85);
+     background: -moz-linear-gradient(left ,#696344, #be8e85);
+     /*background: linear-gradient(to left ,#696344, #be8e85);*/  
 }
 
 .blur_ref-index_3 
 {
-     background-color: rgb(125,125,164);
+     background: -webkit-linear-gradient(left ,#1e1631, #8989b4);
+     background: -o-linear-linear-gradient(left ,#1e1631, #8989b4);
+     background: -ms-linear-gradient(left ,#1e1631, #8989b4);
+     background: -moz-linear-gradient(left ,#1e1631, #8989b4);
+     /*background: linear-gradient(to left ,#1e1631, #8989b4);*/
 }
 
 .ref-title{
@@ -926,7 +982,7 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
 	font-family: 'Alef', sans-serif;
     color:white;
 
-    margin-top: 40px;
+    margin-top: 54px;
     padding:26px;
 
     text-align:justify;
@@ -936,11 +992,72 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
     
 }
 
+
 .ref-title h3{
 	font-size:40px;
 	margin:0px;
 
 }
+
+.ref-index.open .SliderButtons {
+
+    position:absolute;
+    z-index:7;
+
+    width: 80px;
+    height:16px;
+
+    left:32px;
+    bottom:80px;
+
+}
+
+.ref-index.open .SliderButtons div
+{
+    
+    width:12px;
+    height:12px;
+    float:left;
+    margin-right:10px;
+
+    border:1px solid transparent;
+    border-radius: 8px;
+    background: rgba(172, 197, 196,0.5);
+
+}
+
+
+.white 
+{
+    background-color:white !important;
+}
+
+    /*.ref-index.open .SliderButtons div:hover {
+        background: white;
+        -moz-transition: background-color ease-out 0.5s;
+        -o-transition: background-color ease-out 0.5s;
+        -webkit-transition: background-color ease-out 0.5s;
+        transition: background-color ease-out 0.5s;
+    }*/
+
+
+.ref-index.open .SliderLinks 
+{
+    position:absolute;
+    z-index:8;
+
+   
+    width: 230px;
+    height:30px;
+
+    left:32px;
+    bottom:28px;
+
+    font-size: 14px;
+    font-family: 'Alef', sans-serif;
+    color: white;
+}
+
 
 
 #tRefCol1 .ref-index.visible .ref-title{
@@ -1015,18 +1132,18 @@ body:not(.ipad) #competences.visible .t-list-metier:nth-child(4) {
 }
 
 .brackets_1 {
-    background:url(../img/1.png) no-repeat; 
+     background: url(../img/sprite_pic.png) no-repeat 0 3px;
 
 }
 
 .brackets_2 {
-background:url(../img/2.png) no-repeat; 
-top:140px;
+    background: url(../img/sprite_pic.png) no-repeat 0 -73px;
+    top:140px;
 }
 
 .brackets_3 {
-    background:url(../img/3.png) no-repeat; 
-    top:245px;
+      background: url(../img/sprite_pic.png) no-repeat 0 -149px;
+      top:245px;
 }
 
 .brackets div:first-child {
@@ -1068,12 +1185,30 @@ top:140px;
     background-color:rgb(194, 151, 143);
 }
 
-#tRefCol2 .ref-close{
+.ref-close {
 
-	cursor:pointer;
+    width:60px;
+    height:60px;
+    color:white;
+    
+    font-size:30px;
+    text-align: center;
+    line-height: 1.9;
+
+    border:1px solid transparent;
+    border-radius:30px;
+    
+    background: rgba(43,34,34,0.4);
+
+    cursor:pointer;
     display:block;
     position:absolute;
     z-index:3;
+
+}
+
+#tRefCol2 .ref-close{
+    
     top:36px;
     right:26px;
 }
@@ -1081,10 +1216,7 @@ top:140px;
 
 #tRefCol1 .ref-close
 {
-    cursor:pointer;
-    display:block;
-    position:absolute;
-    z-index:3;
+    
     top:36px;
     left:26px;
 }
@@ -1104,17 +1236,36 @@ top:140px;
 
 #tRefCol2 .ref-resources.open .swipe  {
 	
-    width:740px !important;
+    width:770px !important;
     
 }
 
 #tRefCol1 .ref-resources.open .swipe  {
 	
-    width:740px !important;
+    width:770px !important;
+    
     
 }
 
 .ref-fleche-gauche, .ref-fleche-droite{
+
+    width:88px;
+    height:88px;
+    
+    color:white;
+
+    font-weight:inherit;
+    font-style:normal;
+    font-size:43px;
+    
+    text-align: center;
+    line-height: 1.9;
+
+    border:1px solid transparent;
+    border-radius:44px;
+    
+    background: rgba(43,34,34,0.4);
+
 	position:absolute;
 	top:50%;
 	margin-top:-15px;
@@ -1144,6 +1295,7 @@ top:140px;
 }
 .swipe-wrap > div {
   	float:left;
+    /*width:770px !important;*/
   	height:100%;
  	position: relative;
 } 
@@ -1321,18 +1473,19 @@ top:140px;
 #voeux14 #go span:hover{
     background-image:url("images/go_hover.png");
 }
-#voeux14 .close_voeux, #contactThanks .close_contact_thanks{
-	 margin-top: -4%;
-	position: absolute;
-	left: 30%;
-	margin-left: 240px;
-	cursor:pointer;
-	-webkit-transition:all 0.4s ease;
-	-moz-transition:all 0.4s ease;
-	-ms-transition:all 0.4s ease;
-	-o-transition:all 0.4s ease;
-	-transition:all 0.4s ease;
-}
+    #voeux14 .close_voeux, #contactThanks .close_contact_thanks {
+        margin-top: -4%;
+        position: absolute;
+        left: 30%;
+        margin-left: 240px;
+        cursor: pointer;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -ms-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        -transition: all 0.4s ease;
+    }
 #voeux14 .close_voeux:hover, #contactThanks .close_contact_thanks:hover{
 	-webkit-transform: rotate(180deg);
 	-moz-transform: rotate(180deg);

@@ -16,8 +16,10 @@ var Application = function(){
 		$(window).trigger('resize');
 		$(document).scrollTop(0);
 		//$('#playBtn').get(0).click();
-		//generateMap();
-		$('.ref-index:first').get(0).click();
+	    //generateMap();
+		var ddd = $('#reference0');
+
+		$('#reference0').click();
 		/*
 		var hash = document.location.hash;
 		if(hash.length > 0){
@@ -392,4 +394,38 @@ var Application = function(){
 
 var app = new Application();
 
+$(function () {
+
+    allButtons = $(".SliderButtons div");
+
+    allButtons.click(function (event) {
+
+        allButtons.removeClass("white")
+
+        $(this).toggleClass("white");
+        event.stopPropagation();
+
+
+        if ($(this).hasClass('firstSliderButton'))
+
+        {
+            $(".slider_text").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at est nec orci euismod tristique a eu metus. Cras pharetra diam at velit commodo vehicula. Etiam hendrerit augue rhoncus pulvinar");
+        }
+        else if ($(this).hasClass('secondSliderButton'))
+
+        {
+            $(".slider_text").text("Etiam hendrerit augue rhoncus pulvinar Etiam hendrerit augue rhoncus pulvinar Etiam hendrerit augue rhoncus pulvinar Etiam hendrerit augue rhoncus pulvinar");
+        }
+
+        else if ($(this).hasClass('thirdSliderButton'))
+
+        {
+          
+            $(".slider_text").text("Etiam hendrerit augue rhoncus pulvinar Etiam hendrerit augue rhoncus pulvinar Etiam hendrerit augue rhoncus pulvinar");
+        
+        }
+
+    });
+
+});
 

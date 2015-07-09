@@ -9,38 +9,76 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Font Awesome  -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- Custom CSS -->
-    <link href="Custom.css" rel="stylesheet" />
+    <link href="css/Custom.css" rel="stylesheet" />
     <link href="css/awwwards.css" rel="stylesheet" />
     <link href="css/fontfaces.css" rel="stylesheet" />
     <link href="css/index.css" rel="stylesheet" />
     <link href="css/keyframes.css" rel="stylesheet" />
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link href="css/animateStyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     
     <!-- Google fonts -->
     <link href='http://fonts.googleapis.com/css?family=Alef' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
     
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body data-type="background" data-speed="10" id="body-el">
+    <div id="parallaxBackground" class="mouse-bg"></div>
+    <div id="welcome_anchor" style="height:1px;position:absolute;width:100%"></div>
     <header id="header">
         <div class="container-fluid opac-layout-50">
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-5"><a href="#" class="navbar-brand"><img src="img/logo.png" /></a></div>
+                <!--<traget>--> <div id="WelcomeScroll" style="position:relative; width:100%; height:5px; top:89px; "></div>
             </div>
-            <div class="row">
-                <ul class="nav nav-pills navbar-center">
-                    <li role="presentation"><a href="#welcome" id="scroll">Welcom</a></li><li>/</li>
-                    <li role="presentation"><a href="#what" id="scroll">What</a></li><li>/</li>
-                    <li role="presentation"><a href="#how" id="scroll">How</a></li><li>/</li>
-                    <li role="presentation"><a href="#service" id="scroll">Services</a></li><li>/</li>
-                    <li role="presentation"><a href="#case" id="scroll">Case studies</a></li><li>/</li>
-                    <li role="presentation"><a href="#contact" id="scroll">Contact</a></li>
+
+            <div class="row" id="Mymenu">
+
+                <ul class="nav nav-pills">
+                    <li role="presentation" class="active"><a href=" #welcome_anchor" class="scrolling">Welcome</a></li>
+
+                    <li role="presentation"><a class="li_a">/</a></li>
+
+                    <li role="presentation"><a href="#menu_what" class="scrolling">What</a></li>
+
+                    <li role="presentation"><a class="li_a">/</a></li>
+
+                    <li role="presentation"><a href="#how_anchor" class="scrolling">How</a></li>
+
+                    <li role="presentation"><a class="li_a">/</a></li>
+
+                    <li role="presentation"><a href="#service_anchor" class="scrolling">Services</a></li>
+
+                    <li role="presentation"><a class="li_a">/</a></li>
+
+                    <li role="presentation"><a href="#case_anchor" class="scrolling">Case studies</a></li>
+
+                    <li role="presentation"><a class="li_a">/</a></li>
+
+                    <li role="presentation"><a href="#contact_anchor" class="scrolling">Contact</a></li>
+
+
                 </ul>
+
+                <!--<div class="nav nav-pills navbar-center">
+                    <div role="presentation" style="width:113px; height:30px"><a href=" #WelcomeScroll" class="scrolling">Welcome</a></div>
+                    <div>/</div>
+                    <div role="presentation" style="width:77px; height:30px"><a href="#menu_what" class="scrolling">What</a></div>
+                    <div>/</div>
+                    <div role="presentation" style="width:71px;height:30px"><a href="#how" class="scrolling">How</a></div>
+                    <div>/</div>
+                    <div role="presentation" style="width:107px; height:30px"><a href="#service" class="scrolling">Services</a></div>
+                    <div>/</div>
+                    <div role="presentation" style="width:145px; height:30px"><a href="#case" class="scrolling">Case studies</a></div>
+                    <div>/</div>
+                    <div role="presentation" style="width:100px; height:30px"><a href="#contact" class="scrolling">Contact</a></div>
+                </div>-->
             </div>
         </div>
     </header>
@@ -57,22 +95,52 @@
             </div>
         </div>
     </section>
+
+
+    <div id="menu_what" style="position:absolute; width:100%; height:20px; top:640px; "></div>
+
     <section id="what">
         <div class="container">
             <div class="row">
-                <div class="col-lg-offset-4 col-lg-4">
-                <div class="assets"><img src="img/asets.png" /></div>
-                <hr class="opac-line" />
-                <h2>What we do</h2>
-                <div class="span">We generate wanting<div class="squer"></div></div>
-                <p>Brainstorm Is a Brand & Marketing development agency which is engaged in research and creation of desirability-generating algorithms. Our working process combines a deep comprehension of corporate brand behavior with an advanced arsenal of technological capabilities. We consist solely of highly specialized personnel with proven experience in order to guarantee the best results.</p>
-                <div class="RXD">
-                    <div class="circle circle-top-1"><div class="plus">+</div></div>
-                    <div class="circle circle-top-2"><div class="plus">+</div></div>
-                    <p>R X D = Ep</p>
-                    <div class="circle circle-bot"><div class="plus">+</div></div>
-                </div>
-                <p>*Relation of consumers' total potential energy for action*</p>
+                <div class="col-lg-offset-4 col-lg-4" style="z-index:14">
+                    <a href="#menu_what" class="assets scrolling"><img src="img/asets.png" /></a>
+                    <hr class="opac-line" />
+                    <h2 id="What_words">What we do</h2>
+                    <div class="span">We generate wanting<div class="squer"></div></div>
+                    <p>Brainstorm Is a Brand & Marketing development agency which is engaged in research and creation of desirability-generating algorithms. Our working process combines a deep comprehension of corporate brand behavior with an advanced arsenal of technological capabilities. We consist solely of highly specialized personnel with proven experience in order to guarantee the best results.</p>
+                    <div class="RXD">
+                        <div class="circle circle-top-1">
+                            <div class="RXD-info-corner opac" style="display:none">
+                                <div class="RXD-info">
+                                    <div class="RXD-info-head">R</div>
+                                    <p>Lorem ipsum</p>
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                </div>
+                            </div>
+                            <div class="plus">+</div>
+                        </div>
+                        <p>R X D = Ep</p>
+                        <div class="circle circle-top-2">
+                            <div class="RXD-info-corner opac" style="display:none">
+                                <div class="RXD-info">
+                                    <div class="RXD-info-head">D</div>
+                                    <p>Lorem ipsum</p>
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                </div>
+                            </div>
+                            <div class="plus">+</div>
+                        </div>
+                        <div class="circle circle-bot">
+                            <div class="RXD-info-corner opac" style="display:none">
+                                <div class="RXD-info">
+                                    <div class="RXD-info-head">Ep</div>
+                                    <p>Lorem ipsum</p>
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                </div>
+                            </div>
+                            <div class="plus">+</div>
+                        </div>
+                    </div><p>*Relation of consumers' total potential energy for action*</p>
                     <div class="hex-container">
                         <div class="hex hex-1">
                             <div class="inner">
@@ -89,17 +157,11 @@
                         <div class="mans">
                             <div class="figures">
                                 <img src="img/man1.png" class="man1" />
-                                <img src="img/man2.png" class="man2" />
-                                <img src="img/man3.png" class="man3" />
-                                <img src="img/man4.png" class="man4" />
-                                <img src="img/man5.png" class="man5" />
-                                <img src="img/man6.png" class="man6" />
-                                <img src="img/man7.png" class="man7" />
                                 <img src="img/gift.png" class="gift" />
                                 <img src="img/basket.png" class="basket" />
                             </div>
                             <div class="hum-dot"><img src="img/hum-dot.png" /></div>
-                            <div class="hum-line-container"><div class="hum-line"><div class="pointer pointer-1"></div><div class="pointer pointer-2"></div><div class="pointer pointer-3"></div></div></div>
+                            <div class="hum-line-container"><div class="hum-line"></div></div>
                             <div class="hum-dot"><img src="img/hum-dot.png" /></div>
                         </div>
                         <div class="miksher">
@@ -110,7 +172,12 @@
                                 </div>
                                 <span>50%<br>Reach</span>
                             </div>
-                            <div class="numbers"><div class="btn-num">1</div><div class="btn-num">2</div><div class="btn-num">3</div></div>
+                            <div class="numbers">
+                                <div id="preset1" class="btn-num">1</div>
+                                <div id="preset2" class="btn-num">2</div>
+                                <div id="preset3" class="btn-num">3</div>
+
+                            </div>
                             <div class="Ep"><img src="img/wi-fi.png" /><span>Ep</span></div>
                             <div class="desirability">
                                 <p>+</p>
@@ -126,43 +193,71 @@
         </div>
     </section>
     <hr />
+    <div id="how_anchor"></div>
     <section id="how">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h3>How we do it</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink"
+                         id="SVG_canvas">
+                        <path d="M620,23 L730,131" style="stroke:#AB9230;stroke-width:4;fill:none;fill-rule:evenodd;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill:none;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:155px;stroke-dashoffset:0px;"
+                              data-2224="stroke-dashoffset:155px;"  data-2399="stroke-dashoffset:0;"  />
+                        <path d="M646,341 L489,471" style="stroke:#4fa5a5;stroke-width:4;fill:none;fill-rule:evenodd;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill:none;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:204px;stroke-dashoffset:0px;"
+                              data-2400="stroke-dashoffset:204px;" data-2666="stroke-dashoffset:0;" />
+                        <path d="M950,494 L700,913" style="stroke:#4fa5a5;stroke-width:4;fill:none;fill-rule:evenodd;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill:none;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:488px;stroke-dashoffset:0px;"
+                              data-2666="stroke-dashoffset:488px;" data-3066="stroke-dashoffset:0;" />
+                        <path d="M558,1082 L469,1159" style="stroke:#4fa5a5;stroke-width:4;fill:none;fill-rule:evenodd;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill:none;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:118px;stroke-dashoffset:0px;"
+                              data-3066="stroke-dashoffset:118px;" data-3333="stroke-dashoffset:0;" />
+                        <path d="M774,1295 L403,1711" style="stroke:#d14343;stroke-width:4;fill:none;fill-rule:evenodd;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill:none;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:557px;stroke-dashoffset:0px;"
+                              data-3333="stroke-dashoffset:557px;" data-3732="stroke-dashoffset:0;" />
+                        <path d="M403,1711 L646,1955" style="stroke:#ffffff;stroke-width:4;fill:none;fill-rule:evenodd;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill:none;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:347px;stroke-dashoffset:0px;"
+                              data-3732="stroke-dashoffset:347px;" data-4000="stroke-dashoffset:0;" />
+                        <path d="M646,1955 L966,2277" style="stroke:#ffffff;stroke-width:4;fill:none;fill-rule:evenodd;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill:none;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:453px;stroke-dashoffset:0px;"
+                              data-4000="stroke-dashoffset:453px;" data-4400="stroke-dashoffset:0;" />
+                        <path d="M646,1955 L323,2277" style="stroke:#ffffff;stroke-width:4;fill:none;fill-rule:evenodd;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill:none;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:456px;stroke-dashoffset:0px;"
+                              data-4000="stroke-dashoffset:456px;" data-4400="stroke-dashoffset:0;" />
+                    </svg>
                     <div class="how-graphics">
                         <div class="big-man">
-                            <img src="img/big-man.png" /></div>
-                        <div class="icon3">
-                            <img src="img/3_icons.png" />
+                            <img src="img/big-man.png" />
                         </div>
-                        <div class="vector-line-1"></div>
-                        <div class="vector-line-2"></div>
-                        <div class="brain">
+                        <div class="icon3">
+                            <div class="three-icon-image heart-icon"></div>
+                            <div class="three-icon-line"></div>
+                            <div class="three-icon-image brain-icon"></div>
+                            <div class="three-icon-line"></div>
+                            <div class="three-icon-image infinity-icon"></div>
+                        </div>
+                        <div class="brain" style="transition:opacity 1s;"  data-2266="opacity:0" data-2400="opacity:1">
                             <img src="img/brain.png" />
                         </div>
-                        <div class="text-box">
+                        <div class="text-box" style="opacity:0;transition:opacity 1s;" data-2533="opacity:0" data-2666="opacity:1">
                             <p>Basically, we read minds</p>
                             <span>Analyzing the prospect’s behavior, we hunt for their thinking patterns and conscious set of considerations, in order to gradually obtain a predictable algorithm comprising all the main rational factors that play a crucial role in his process of decision making.</span>
                         </div>
-                        <div class="vector-line-3"></div>
-                        <div class="heart"><img src="img/heart.png" /></div>
-                        <div class="vector-line-3"></div>
-                        <div class="vector-line-4"></div>
-                        <div class="text-box text-box2">
+                        <div class="heart" style="transition:opacity 1s;" data-3003="opacity:0" data-3066="opacity:1"><img src="img/heart.png" /></div>
+                        <div class="text-box text-box2" style="opacity:0;transition:opacity 1s;" data-3199="opacity:0" data-3333="opacity:1">
                             <p>The silent advisors</p>
                             <span>Trying to reach a deeper layer of the prospects’ set of considerations, we start mapping the prospects associative world, carefully unveiling the deeper motivation that unconsciously cast their effect on the prospect process of decision making. You could call it their intuition.</span>
                         </div>
-                        <div class="vector-line-5"></div>
-                        <div class="vector-line-6"></div>
-                        <div class="vector-line-7"></div>
                     </div>
                     <div class="infinity">
                         <div class="circ-1"></div><div class="Fr-Fe">{Fr+Fe =D}</div><div class="circ-2"></div>
                         <img src="img/heart_small.png" />
+
+                        <div class=" red_circle infinity_circle "></div>
+                        <div class="blue_circle infinity_circle"></div>
+                        <div class="yellow_circle infinity_circle"></div>
+                        <div class="green_circle infinity_circle"></div>
+                        <div class="lightgreen_circle infinity_circle"></div>
+
+
+
                         <img src="img/infinity.png" />
                         <img src="img/brain_small.png" />
+
                     </div>
                     <div>
                         <h2>You believe yourself the most</h2>
@@ -178,6 +273,7 @@
         </div>
     </section>
     <hr />
+    <div id="service_anchor"></div>
     <section id="service">
         <div class="container">
             <div class="row">
@@ -188,9 +284,9 @@
                     </div>
                     <div class="hexa-group">
                         <div class="hex hex-2" id="hexa2">
-                                <h4>Branding</h4>
-                                <hr />
-                                <p>+</p>
+                            <h4>Branding</h4>
+                            <hr />
+                            <p>+</p>
                             <div class="corner-1"></div>
                             <div class="corner-2"></div>
                         </div>
@@ -252,11 +348,15 @@
         </div>
     </section>
     <hr />
+    <div id="case_anchor"></div>
     <section id="case">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h3>Case studies</h3>
+
+                    <!--Traget Case1-->   <div id="case1" style="height:43px; width:100%;"></div>
+                    <!--Traget Case2 --><div id="case2" style="height:35px; width:100%; position:absolute; top:461px; background-color:transparent;"></div>
 
                     <div id="bodyContents" style="position:relative;">
                         <div id="content">
@@ -264,39 +364,49 @@
                                 <div id="tRefCol1">
 
                                     <div class="ref-resources" for="reference1">
-                                        <img src="references/sfl/close.png" for="reference1" class="ref-close" />
+
+                                        <div for="reference1" class="ref-close glyphicon glyphicon-remove"> </div>
+
                                         <div class="swipe">
                                             <div class="swipe-wrap">
                                                 <div>
-                                                    <div class="ref-image" style="background-image:url('references/fft/images/image1.jpg')"></div>
+                                                    <div class="ref-image" style="background-image:url('img/slider/second/images/image1.jpg')"></div>
                                                 </div>
                                                 <div>
-                                                    <div class="ref-image" style="background-image:url('references/fft/images/image2.jpg')"></div>
+                                                    <div class="ref-image" style="background-image:url('img/slider/second/images/image2.jpg')"></div>
                                                 </div>
                                                 <div>
-                                                    <div class="ref-image" style="background-image:url('references/fft/images/image3.jpg')"></div>
+                                                    <div class="ref-image" style="background-image:url('img/slider/second/images/image3.jpg')"></div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <img class="ref-fleche-gauche" src="img/fleche_gauche.png" alt="Défiler à gauche" />
-                                        <img class="ref-fleche-droite" src="img/fleche_droite.png" alt="Défiler à droite" />
+
+                                        <div class="ref-fleche-gauche glyphicon glyphicon-chevron-left" alt="Alt_Text"></div>
+                                        <div class="ref-fleche-droite glyphicon glyphicon-chevron-right" alt="Alt_Text"></div>
+
                                     </div>
+
                                     <div class="ref-index" id="reference0" style="background-color:#ff6699;">
-                                        <img src="references/sfl/main.jpg" />
-                                        <div class="blur_ref-index blur_ref-index_0"></div>
+                                        <img src="img/slider/first/main.jpg" />
+                                        <a href="#case1" class="blur_ref-index blur_ref-index_0 scrolling"></a>
+
+
+
                                         <div class="ref-title">
                                             <h2>Customer name in English</h2>
                                         </div>
                                         <div class="slider_text">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Morbi at est nec orci euismod tristique a eu metus. Cras
-                                            pharetra diam at velit commodo vehicula. Etiam hendrerit
-                                            augue rhoncus pulvinar sodales. Nam tincidunt feugiat urna,
-                                            suscipit scelerisque erat luctus faucibus. Curabitur ultricies
-                                            ipsum felis, sed Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Morbi at est nec orci euismod tristique a eu metus. Cras pharetra diam at
-                                            velit comm... hicula. Etiam hendrerit augue rhoncus pulvinar
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at est nec orci euismod tristique a eu metus. Cras pharetra diam at velit commodo vehicula. Etiam hendrerit augue rhoncus pulvinar
+                                        </div>
 
+                                        <div class="SliderButtons">
+                                            <div class="firstSliderButton white"></div>
+                                            <div class="secondSliderButton"></div>
+                                            <div class="thirdSliderButton"></div>
+                                        </div>
+
+                                        <div class="SliderLinks">
+                                            <span>Design</span> / <span>Brand</span> / <span>Photography</span>
                                         </div>
 
                                     </div>
@@ -324,26 +434,26 @@
                                         </div>
                                     </div>
                                     <div class="ref-resources" for="reference3">
-                                        <img src="references/sfl/close.png" for="reference3" class="ref-close" />
+                                        <div for="reference3" class="ref-close glyphicon glyphicon-remove"> </div>
                                         <div class="swipe">
                                             <div class="swipe-wrap">
                                                 <div>
-                                                    <div class="ref-image" style="background-image:url('references/dp/images/image1.jpg')"></div>
+                                                    <div class="ref-image" style="background-image:url('img/slider/fourth/images/image1.jpg')"></div>
                                                 </div>
                                                 <div>
-                                                    <div class="ref-image" style="background-image:url('references/dp/images/image2.jpg')"></div>
+                                                    <div class="ref-image" style="background-image:url('img/slider/fourth/images/image2.jpg')"></div>
                                                 </div>
                                                 <div>
-                                                    <div class="ref-image" style="background-image:url('references/dp/images/image3.jpg')"></div>
+                                                    <div class="ref-image" style="background-image:url('img/slider/fourth/images/image3.jpg')"></div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <img class="ref-fleche-gauche" src="img/fleche_gauche.png" alt="Défiler à gauche" />
-                                        <img class="ref-fleche-droite" src="img/fleche_droite.png" alt="Défiler à droite" />
+                                        <div class="ref-fleche-gauche glyphicon glyphicon-chevron-left" alt="Alt_Text"></div>
+                                        <div class="ref-fleche-droite glyphicon glyphicon-chevron-right" alt="Alt_Text"></div>
                                     </div>
                                     <div class="ref-index" id="reference2">
-                                        <img src="references/qu4drans/main.jpg" />
-                                        <div class="blur_ref-index blur_ref-index_2"></div>
+                                        <img src="img/slider/third/main.jpg" />
+                                        <!--Source-->                           <a href="#case2" class="blur_ref-index blur_ref-index_2 scrolling"></a>
                                         <div class="ref-title">
                                             <h2>Customer name</h2>
                                         </div>
@@ -388,29 +498,29 @@
                                 </div>
                                 <div id="tRefCol2">
                                     <div class="ref-resources" for="reference0">
-                                        <img src="references/sfl/close.png" for="reference0" class="ref-close" />
+                                        <div for="reference0" class="ref-close glyphicon glyphicon-remove"> </div>
                                         <div class="swipe">
                                             <div class="swipe-wrap">
                                                 <div>
-                                                    <div class="ref-image" style="background-image:url('references/sfl/images/image1.jpg')"></div>
+                                                    <div class="ref-image" style="background-image:url('img/slider/first/images/image1.jpg')"></div>
                                                 </div>
                                                 <div>
-                                                    <div class="ref-image" style="background-image:url('references/sfl/images/image2.jpg')"></div>
+                                                    <div class="ref-image" style="background-image:url('img/slider/first/images/image2.jpg')"></div>
                                                 </div>
                                                 <div>
-                                                    <div class="ref-image" style="background-image:url('references/sfl/images/image2.jpg')"></div>
+                                                    <div class="ref-image" style="background-image:url('img/slider/first/images/image2.jpg')"></div>
                                                 </div>
                                                 <div>
-                                                    <div class="ref-image" style="background-image:url('references/sfl/images/image2.jpg')"></div>
+                                                    <div class="ref-image" style="background-image:url('img/slider/first/images/image2.jpg')"></div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <img class="ref-fleche-gauche" src="img/fleche_gauche.png" alt="Défiler à gauche" />
-                                        <img class="ref-fleche-droite" src="img/fleche_droite.png" alt="Défiler à droite" />
+                                        <div class="ref-fleche-gauche glyphicon glyphicon-chevron-left" alt="Alt_Text"></div>
+                                        <div class="ref-fleche-droite glyphicon glyphicon-chevron-right" alt="Alt_Text"></div>
                                     </div>
                                     <div class="ref-index" id="reference1">
-                                        <img src="references/fft/main.jpg" />
-                                        <div class="blur_ref-index blur_ref-index_1"></div>
+                                        <img src="img/slider/second/main.jpg" />
+                                        <!--Source-->                           <a href="#case1" class="blur_ref-index blur_ref-index_1 scrolling"></a>
                                         <div class="ref-title">
                                             <h2>Customer name in English</h2>
                                         </div>
@@ -427,26 +537,26 @@
                                         </div>
                                     </div>
                                     <div class="ref-resources" for="reference2">
-                                        <img src="references/sfl/close.png" for="reference2" class="ref-close" />
+                                        <div for="reference2" class="ref-close glyphicon glyphicon-remove"> </div>
                                         <div class="swipe">
                                             <div class="swipe-wrap">
                                                 <div>
-                                                    <div class="ref-image" style="background-image:url('references/qu4drans/images/image1.jpg')"></div>
+                                                    <div class="ref-image" style="background-image:url('img/slider/third/images/image1.jpg')"></div>
                                                 </div>
                                                 <div>
-                                                    <div class="ref-image" style="background-image:url('references/qu4drans/images/image2.jpg')"></div>
+                                                    <div class="ref-image" style="background-image:url('img/slider/third/images/image2.jpg')"></div>
                                                 </div>
                                                 <div>
-                                                    <div class="ref-image" style="background-image:url('references/qu4drans/images/image2.jpg')"></div>
+                                                    <div class="ref-image" style="background-image:url('img/slider/third/images/image2.jpg')"></div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <img class="ref-fleche-gauche" src="img/fleche_gauche.png" alt="Défiler à gauche" />
-                                        <img class="ref-fleche-droite" src="img/fleche_droite.png" alt="Défiler à droite" />
+                                        <div class="ref-fleche-gauche glyphicon glyphicon-chevron-left" alt="Alt_Text"></div>
+                                        <div class="ref-fleche-droite glyphicon glyphicon-chevron-right" alt="Alt_Text"></div>
                                     </div>
                                     <div class="ref-index" id="reference3">
-                                        <img src="references/dp/main.jpg" />
-                                        <div class="blur_ref-index blur_ref-index_3"></div>
+                                        <img src="img/slider/fourth/main.jpg" />
+                                        <!--Source-->                            <a href="#case2" class="blur_ref-index blur_ref-index_3 scrolling"></a>
                                         <div class="ref-title">
                                             <h2>Customer name in English</h2>
                                         </div>
@@ -475,111 +585,118 @@
             </div>
         </div>
     </section>
+    <div id="contact_anchor"></div>
     <section id="contact">
-        <div class="contactUs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="contactUs">
 
 
-            <div class="contName">
-                Contact Us
+                        <div class="contName">
+                            Contact Us
+                        </div>
+                        <div class="chapter">
+                            Connect to 250V <br /> of brain power
+                        </div>
+                        <div class="circle">
+                            <img src="img/lightning.png" />
+                        </div>
+                        <div class="formContact">
+
+
+                            <form class="form-inline">
+
+                                <div class="form-group">
+                                    <label class="sr-only" for="exampleInputAmount"></label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon oneIn">Position:</div>
+                                        <input type="text" class="form-control" id="exampleInputAmount" name="Position" data-patern="^[а-яА-ЯёЁa-zA-Z]+$" data-msgid="posid" data-msg="Incorrect Position">
+
+                                    </div><span id="posid">test</span>
+                                </div>
+
+                                <!------------------------------->
+                                <div class="form-group two">
+                                    <label class="sr-only" for="exampleInputAmount"></label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon oneIn">*Name:</div>
+                                        <input type="text" class="form-control" id="exampleInputAmount" name="Name" data-patern="^[а-яА-ЯёЁa-zA-Z]+$" data-msgid="nameid" data-msg="Incorrect Posiion">
+
+                                    </div><span id="nameid">test</span>
+                                </div>
+
+                                <!------------------------------->
+                                <div class="form-group two">
+                                    <label class="sr-only" for="exampleInputAmount"></label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon oneIn">*Tel:</div>
+                                        <input type="text" class="form-control" id="exampleInputAmount" name="Tel" data-patern="^\+(?:[0-9]●?){6,14}[0-9]$" data-msgid="telid" data-msg="Incorrect Tel">
+
+                                    </div><span id="telid">test</span>
+                                </div>
+
+                                <!------------------------------->
+                                <div class="form-group two">
+                                    <label class="sr-only" for="exampleInputAmount"></label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon oneIn">*Email:</div>
+                                        <input type="text" class="form-control" id="exampleInputAmount" name="Email" data-patern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" data-msgid="emailid" data-msg="Incorrect Email">
+
+                                    </div><span id="emailid">test</span>
+                                </div>
+
+                                <!------------------------------->
+                                <textarea>Connect</textarea>
+                                <!------------------------------->
+
+                                <div class="select input-group">
+                                    <label class="sr-only" for="exampleInputAmount"></label>
+
+                                    <div class="Input-group-name oneIn">Services:</div>
+                                    <input type="text" class="form-control" id="checkboxClick" placeholder="Select..." />
+                                    <div class="input-group-addon" id="Myaddon">▼</div>
+                                    <label id="checkbox-holder" for="checkboxClick">
+                                        <table>
+                                            <tr><td><input type="checkbox" id="1" /><label for="1">aaaaaaaaaaaaaaaaaaaaa</label></td></tr>
+                                            <tr><td><input type="checkbox" id="2" /><label for="2">aaaabbbbbbbb</label></td></tr>
+                                            <tr><td><input type="checkbox" id="3" /><label for="3">aacccccccccccc</label></td></tr>
+                                            <tr><td><input type="checkbox" id="4" /><label for="4">adddddddddd</label></td></tr>
+                                            <tr><td><input type="checkbox" id="5" /><label for="5">bbbbbbddddd</label></td></tr>
+                                            <tr><td><input type="checkbox" id="6" /><label for="6">deeeeeedddd</label></td></tr>
+                                            <tr><td><input type="checkbox" id="7" /><label for="7">eeefffffffff</label></td></tr>
+                                            <tr><td><input type="checkbox" id="8" /><label for="8">efffffffffff</label></td></tr>
+                                            <tr><td><input type="checkbox" id="9" /><label for="9">ffffffffggggg</label></td></tr>
+                                            <tr><td><input type="checkbox" id="10" /><label for="10">gggggggggg</label></td></tr>
+                                            <tr><td><input type="checkbox" id="11" /><label for="11">jjjjjjjjjjj</label></td></tr>
+                                            <tr><td><input type="checkbox" id="12" /><label for="12">jjjjjjjjhhh</label></td></tr>
+                                            <tr><td><input type="checkbox" id="13" /><label for="13">hhhhhhhhhhh</label></td></tr>
+                                            <tr><td><input type="checkbox" id="14" /><label for="14">kkkkkkkkkkkkk</label></td></tr>
+                                            <tr><td><input type="checkbox" id="15" /><label for="15">kkllllllllll</label></td></tr>
+                                            <tr><td><input type="checkbox" id="16" /><label for="16">llllllllllll</label></td></tr>
+                                            <tr><td><input type="checkbox" id="17" /><label for="17">llllmmmmm</label></td></tr>
+                                            <tr><td><input type="checkbox" id="18" /><label for="18">llmmmmmmm</label></td></tr>
+                                            <tr><td><input type="checkbox" id="19" /><label for="19">mmmmmmmmm</label></td></tr>
+                                            <tr><td><input type="checkbox" id="20" /><label for="20">mmmnnnnnn</label></td></tr>
+
+                                        </table>
+
+                                    </label>
+                                </div>
+                                <div class="bigline">
+
+                                    <p>Challenge us with a project</p>
+
+                                </div>
+                                <input type="submit" class="button" value="send" />
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="chapter">
-                Connect to 250V <br /> of brain power
-            </div>
-            <div class="circle">
-                <img src="img/lightning.png" />
-            </div>
-            <div class="formContact">
-
-
-                <form class="form-inline">
-
-                    <div class="form-group">
-                        <label class="sr-only" for="exampleInputAmount"></label>
-                        <div class="input-group">
-                            <div class="input-group-addon oneIn">Position:</div>
-                            <input type="text" class="form-control" id="exampleInputAmount" name="Position" data-patern="^[а-яА-ЯёЁa-zA-Z]+$" data-msgid="posid" data-msg="Incorrect Position">
-                            
-                        </div><span id="posid">test</span>
-                    </div>
-                    
-                    <!------------------------------->
-                    <div class="form-group two">
-                        <label class="sr-only" for="exampleInputAmount"></label>
-                        <div class="input-group">
-                            <div class="input-group-addon oneIn">*Name:</div>
-                            <input type="text" class="form-control" id="exampleInputAmount" name="Name" data-patern="^[а-яА-ЯёЁa-zA-Z]+$" data-msgid="nameid" data-msg="Incorrect Posiion">
-                            
-                        </div><span id="nameid">test</span>
-                    </div>
-                    
-                    <!------------------------------->
-                    <div class="form-group two">
-                        <label class="sr-only" for="exampleInputAmount"></label>
-                        <div class="input-group">
-                            <div class="input-group-addon oneIn">*Tel:</div>
-                            <input type="text" class="form-control" id="exampleInputAmount" name="Tel" data-patern="^\+(?:[0-9]●?){6,14}[0-9]$" data-msgid="telid" data-msg="Incorrect Tel">
-                            
-                        </div><span id="telid">test</span>
-                    </div>
-                    
-                    <!------------------------------->
-                    <div class="form-group two">
-                        <label class="sr-only" for="exampleInputAmount"></label>
-                        <div class="input-group">
-                            <div class="input-group-addon oneIn">*Email:</div>
-                            <input type="text" class="form-control" id="exampleInputAmount" name="Email" data-patern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" data-msgid="emailid" data-msg="Incorrect Email">
-                            
-                        </div><span id="emailid">test</span>
-                    </div>
-                    
-                    <!------------------------------->
-                    <textarea>Connect</textarea>
-                    <!------------------------------->
-
-
-
-
-                    <div class="select">
-                        <label class="sr-only" for="exampleInputAmount"></label>
-                        <div class="Input-group-name oneIn">Services:</div>
-                            <div class="form-control" id="checkboxClick">Select... <span>▼</span></div>
-                            <div id="checkbox-holder">
-                                <table>
-                                    <tr><td><input type="checkbox" id="1" /><label for="1">LOREM IMPUS</label></td></tr>
-                                    <tr><td><input type="checkbox" id="2" /><label for="2">LOREM IMPUS</label></td></tr>
-                                    <tr><td><input type="checkbox" id="3" /><label for="3">LOREM IMPUS</label></td></tr>
-                                    <tr><td><input type="checkbox" id="4" /><label for="4">LOREM IMPUS</label></td></tr>
-                                    <tr><td><input type="checkbox" id="5" /><label for="5">LOREM IMPUS</label></td></tr>
-                                    <tr><td><input type="checkbox" id="6" /><label for="6">LOREM IMPUS</label></td></tr>
-                                    <tr><td><input type="checkbox" id="7" /><label for="7">LOREM IMPUS</label></td></tr>
-                                    <tr><td><input type="checkbox" id="8" /><label for="8">LOREM IMPUS</label></td></tr>
-                                    <tr><td><input type="checkbox" id="9" /><label for="9">LOREM IMPUS</label></td></tr>
-                                    <tr><td><input type="checkbox" id="10" /><label for="10">LOREM IMPUS</label></td></tr>
-                                    <tr><td><input type="checkbox" id="11" /><label for="11">LOREM IMPUS</label></td></tr>
-                                    <tr><td><input type="checkbox" id="12" /><label for="12">LOREM IMPUS</label></td></tr>
-                                    <tr><td><input type="checkbox" id="13" /><label for="13">LOREM IMPUS</label></td></tr>
-                                    <tr><td><input type="checkbox" id="14" /><label for="14">LOREM IMPUS</label></td></tr>
-                                    <tr><td><input type="checkbox" id="15" /><label for="15">LOREM IMPUS</label></td></tr>
-                                    <tr><td><input type="checkbox" id="16" /><label for="16">LOREM IMPUS</label></td></tr>
-                                    <tr><td><input type="checkbox" id="17" /><label for="17">LOREM IMPUS</label></td></tr>
-                                    <tr><td><input type="checkbox" id="18" /><label for="18">LOREM IMPUS</label></td></tr>
-                                    <tr><td><input type="checkbox" id="19" /><label for="19">LOREM IMPUS</label></td></tr>
-                                    <tr><td><input type="checkbox" id="20" /><label for="20">LOREM IMPUS</label></td></tr>
-                                    
-                                </table>
-
-                            </div>
-                    </div>
-                    <div class="bigline">
-
-                        <p>Challenge us with a project</p>
-
-                    </div>
-                    <input type="submit" class="button" value="send"/>
-                </form>
-
-            </div>
-
         </div>
     </section>
     <footer>
@@ -587,20 +704,32 @@
             <img src="img/logo.png" />
         </div>
         <p><i class="fa fa-copyright"></i> 2015 Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        <ul class="nav nav-pills navbar-center">
-            <li role="presentation"><a href="#welcome" id="scroll">Welcom</a></li>
-            <li>/</li>
-            <li role="presentation"><a href="#what" id="scroll">What</a></li>
-            <li>/</li>
-            <li role="presentation"><a href="#how" id="scroll">How</a></li>
-            <li>/</li>
-            <li role="presentation"><a href="#service" id="scroll">Services</a></li>
-            <li>/</li>
-            <li role="presentation"><a href="#" id="scroll">Case studies</a></li>
-            <li>/</li>
-            <li role="presentation"><a href="#" id="scroll">Contact</a></li>
+        <ul class="nav nav-pills nav-bar-center">
+            <li role="presentation" class="active"><a href=" #welcome_anchor" class="scrolling">Welcome</a></li>
+
+            <li role="presentation"><a class="li_a">/</a></li>
+
+            <li role="presentation"><a href="#menu_what" class="scrolling">What</a></li>
+
+            <li role="presentation"><a class="li_a">/</a></li>
+
+            <li role="presentation"><a href="#how_anchor" class="scrolling">How</a></li>
+
+            <li role="presentation"><a class="li_a">/</a></li>
+
+            <li role="presentation"><a href="#service_anchor" class="scrolling">Services</a></li>
+
+            <li role="presentation"><a class="li_a">/</a></li>
+
+            <li role="presentation"><a href="#case_anchor" class="scrolling">Case studies</a></li>
+
+            <li role="presentation"><a class="li_a">/</a></li>
+
+            <li role="presentation"><a href="#contact_anchor" class="scrolling">Contact</a></li>
+
+
         </ul>
-        
+
         <div class="social">
             <a href="" class="Facebook"><i class="fa fa-facebook"></i></a>
             <a href="" class="Linkedin"><i class="fa fa-linkedin"></i></a>
@@ -611,12 +740,31 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <script src="js/parallax.min.js"></script>
+    <script src="js/howManyScroll.js"></script>
+    <script src="js/mouse.parallax.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/jquery.scrolling-parallax.js"></script>
+    <script src="js/skrollr.min.js"></script>
     <script src="js/swipe.js"></script>
     <script src="js/FormJS.js"></script>
     <script src="js/CustomJs.js"></script>
+    <script src="js/HumanAnimate.js"></script>
     <script src="js/index.js"></script>
+    <script>
+        skrollr.init({
+            forceHeight: false
+        });
+    </script>
+    <script>
+
+        $(document).ready(function () {
+
+            $('#parallaxBackground').mouseParallax({ moveFactor: 5, verticalFactor: 5 });
+        });
+    </script>
+
+
 </body>
 </html>

@@ -1,0 +1,468 @@
+﻿.pointer{
+  width: 21px;
+  height: 21px;
+  border: 1px solid #000;
+  border-radius: 100%;
+  background-color: #626262;
+  margin: 0px auto;
+  margin-top: 85px;
+}
+.manBox {  
+  background-position: 50% -2%;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 106px;
+  position: absolute;
+  bottom: -7px;
+  opacity:1;
+  -webkit-transition: opacity 1s,bottom 1s;
+  -moz-transition: opacity 1s,bottom 1s;
+  -o-transition: opacity 1s,bottom 1s;
+  transition: opacity 1s,bottom 1s;
+}
+.preset1-man1-animate{
+    -moz-animation:preset1-man1 10s ease-out forwards;
+    -o-animation:preset1-man1 10s ease-out forwards;
+    -webkit-animation:preset1-man1 10s ease-out forwards;
+    animation: preset1-man1 10s ease-out forwards ;
+}
+.preset1-man2-animate{
+    -moz-animation:preset1-man2 10s ease-out forwards;
+    -o-animation:preset1-man2 10s ease-out forwards;
+    -webkit-animation:preset1-man2 10s ease-out forwards;
+    animation:preset1-man2 10s ease-out forwards ;
+}
+.preset1-man3-animate{
+    -moz-animation:preset1-man3 3s ease-out forwards;
+    -o-animation:preset1-man3 3s ease-out forwards;
+    -webkit-animation:preset1-man3 3s ease-out 0.8s forwards;
+    animation:preset1-man3 3s ease-out forwards ;
+}
+
+   @keyframes preset1-man3{
+      0%{
+           background-image: url('../img/man6.png');
+           left:165px;
+       }
+      3%{
+            
+           background-image: url('../img/man6.png');
+           left:165px;
+        }
+       100%{
+           background-image: url('../img/man6.png');
+           left:598px;
+       }
+ }
+ @-moz-keyframes preset1-man3{
+             0%{
+           background-image: url('../img/man6.png');
+           left:165px;
+       }
+      3%{
+            
+           background-image: url('../img/man6.png');
+           left:165px;
+        }
+       100%{
+           background-image: url('../img/man6.png');
+           left:598px;
+       } }
+  @-webkit-keyframes preset1-man3{
+             0%{
+           background-image: url('../img/man6.png');
+           left:165px;
+       }
+      3%{
+            
+           background-image: url('../img/man6.png');
+           left:165px;
+        }
+       100%{
+           background-image: url('../img/man6.png');
+           left:598px;
+       }  }
+
+
+
+/*
+        keyframes Properties --------------- 
+*/
+ @keyframes preset1-man1{
+     0%{
+         background-image: url('../img/man2.png');
+         left:55px;
+    }
+     1% {
+        left:55px;
+        background-image: url('../img/man6.png');
+        animation-timing-function:linear;
+    }
+     15%{
+        background-image: url('../img/man6.png');
+        left:265px;
+     }
+     16%{
+        background-image: url('../img/man2.png');
+        left:265px;
+     }
+     20%{
+        background-image: url('../img/man2.png');
+        left:265px;
+     }
+     21%{
+         background-image: url('../img/man7.png');
+        left:265px;
+     }
+     35%{
+        background-image: url('../img/man7.png');
+        left:55px;
+     }
+     36%{
+         background-image: url('../img/man2.png');
+         left:55px;
+     }
+     45%{
+         background-image: url('../img/man2.png');
+         left:55px;
+     }
+     46%{
+         left:55px;
+        background-image: url('../img/man6.png');
+     }
+     60%{
+         background-image: url('../img/man6.png');
+         left:265px;
+         background-position: 50% -2%;
+         width: 50px;
+     }
+    61% {
+        background-image: url('../img/man3.png');
+        left:265px;
+        background-position: 27px 0px;
+        width: 90px;
+    }
+    100%{
+        background-image: url('../img/man3.png');
+        left:265px;
+        background-position: 27px 0px;
+        width: 90px;
+
+     }
+ }
+ @-moz-keyframes preset1-man1{
+     0%{
+         background-image: url('../img/man2.png');
+         left:55px;
+    }
+     1% {
+        
+        left:55px;
+        background-image: url('../img/man6.png');
+        animation-timing-function:linear;
+    }
+     15%{
+        background-image: url('../img/man6.png');
+        left:265px;
+     }
+     16%{
+        background-image: url('../img/man2.png');
+        left:265px;
+     }
+     20%{
+        background-image: url('../img/man2.png');
+        left:265px;
+     }
+     21%{
+         background-image: url('../img/man7.png');
+        left:265px;
+     }
+     35%{
+        background-image: url('../img/man7.png');
+        left:55px;
+     }
+     36%{
+         background-image: url('../img/man2.png');
+         left:55px;
+     }
+     45%{
+         background-image: url('../img/man2.png');
+         left:55px;
+     }
+     46%{
+         left:55px;
+        background-image: url('../img/man6.png');
+     }
+     60%{
+         background-image: url('../img/man6.png');
+         left:265px;
+         background-position: 50% -2%;
+         width: 50px;
+     }
+    61% {
+        background-image: url('../img/man3.png');
+        left:265px;
+        background-position: 27px 0px;
+        width: 90px;
+    }
+    100%{
+        background-image: url('../img/man3.png');
+        left:265px;
+        background-position: 27px 0px;
+        width: 90px;
+
+     } }
+  @-webkit-keyframes preset1-man1{
+     0%{
+         background-image: url('../img/man2.png');
+         left:55px;
+    }
+     1% {
+        
+        left:55px;
+        background-image: url('../img/man6.png');
+        animation-timing-function:linear;
+    }
+     15%{
+        background-image: url('../img/man6.png');
+        left:265px;
+     }
+     16%{
+        background-image: url('../img/man2.png');
+        left:265px;
+     }
+     20%{
+        background-image: url('../img/man2.png');
+        left:265px;
+     }
+     21%{
+         background-image: url('../img/man7.png');
+        left:265px;
+     }
+     35%{
+        background-image: url('../img/man7.png');
+        left:55px;
+     }
+     36%{
+         background-image: url('../img/man2.png');
+         left:55px;
+     }
+     45%{
+         background-image: url('../img/man2.png');
+         left:55px;
+     }
+     46%{
+         left:55px;
+        background-image: url('../img/man6.png');
+     }
+     60%{
+         background-image: url('../img/man6.png');
+         left:265px;
+         background-position: 50% -2%;
+         width: 50px;
+     }
+    61% {
+        background-image: url('../img/man3.png');
+        left:265px;
+        background-position: 27px 0px;
+        width: 90px;
+    }
+    100%{
+        background-image: url('../img/man3.png');
+        left:265px;
+        background-position: 27px 0px;
+        width: 90px;
+
+     }  }
+
+
+   @keyframes preset1-man2{
+     0%{
+         background-image: url('../img/man2.png');
+         left:110px;
+    }
+     1% {
+        
+        left:110px;
+        background-image: url('../img/man6.png');
+        animation-timing-function:linear;
+    }
+     15%{
+        background-image: url('../img/man6.png');
+        left:320px;
+     }
+     16%{
+        background-image: url('../img/man2.png');
+        left:320px;
+     }
+     20%{
+        background-image: url('../img/man2.png');
+        left:320px;
+     }
+     21%{
+         background-image: url('../img/man7.png');
+        left:320px;
+     }
+     35%{
+        background-image: url('../img/man7.png');
+        left:110px;
+     }
+     36%{
+         background-image: url('../img/man2.png');
+         left:110px;
+     }
+     45%{
+         background-image: url('../img/man2.png');
+         left:110px;
+     }
+     46%{
+         left:110px;
+        background-image: url('../img/man6.png');
+     }
+     60%{
+         background-image: url('../img/man6.png');
+         left:320px;
+         background-position: 50% -2%;
+         width: 50px;
+     }
+    61% {
+        background-image: url('../img/man3.png');
+        left:320px;
+        background-position: 27px 0px;
+        width: 90px;
+    }
+    100%{
+        background-image: url('../img/man3.png');
+        left:320px;
+        background-position: 27px 0px;
+        width: 90px;
+
+     }
+ }
+ @-moz-keyframes preset1-man2{
+     0%{
+         background-image: url('../img/man2.png');
+         left:110px;
+    }
+     1% {
+        
+        left:110px;
+        background-image: url('../img/man6.png');
+        animation-timing-function:linear;
+    }
+     15%{
+        background-image: url('../img/man6.png');
+        left:320px;
+     }
+     16%{
+        background-image: url('../img/man2.png');
+        left:320px;
+     }
+     20%{
+        background-image: url('../img/man2.png');
+        left:320px;
+     }
+     21%{
+         background-image: url('../img/man7.png');
+        left:320px;
+     }
+     35%{
+        background-image: url('../img/man7.png');
+        left:110px;
+     }
+     36%{
+         background-image: url('../img/man2.png');
+         left:110px;
+     }
+     45%{
+         background-image: url('../img/man2.png');
+         left:110px;
+     }
+     46%{
+         left:110px;
+        background-image: url('../img/man6.png');
+     }
+     60%{
+         background-image: url('../img/man6.png');
+         left:320px;
+         background-position: 50% -2%;
+         width: 50px;
+     }
+    61% {
+        background-image: url('../img/man3.png');
+        left:320px;
+        background-position: 27px 0px;
+        width: 90px;
+    }
+    100%{
+        background-image: url('../img/man3.png');
+        left:320px;
+        background-position: 27px 0px;
+        width: 90px;
+
+     }
+ }
+  @-webkit-keyframes preset1-man2{
+     0%{
+         background-image: url('../img/man2.png');
+         left:110px;
+    }
+     1% {
+        
+        left:110px;
+        background-image: url('../img/man6.png');
+        animation-timing-function:linear;
+    }
+     15%{
+        background-image: url('../img/man6.png');
+        left:320px;
+     }
+     16%{
+        background-image: url('../img/man2.png');
+        left:320px;
+     }
+     20%{
+        background-image: url('../img/man2.png');
+        left:320px;
+     }
+     21%{
+         background-image: url('../img/man7.png');
+        left:320px;
+     }
+     35%{
+        background-image: url('../img/man7.png');
+        left:110px;
+     }
+     36%{
+         background-image: url('../img/man2.png');
+         left:110px;
+     }
+     45%{
+         background-image: url('../img/man2.png');
+         left:110px;
+     }
+     46%{
+         left:110px;
+        background-image: url('../img/man6.png');
+     }
+     60%{
+         background-image: url('../img/man6.png');
+         left:320px;
+         background-position: 50% -2%;
+         width: 50px;
+     }
+    61% {
+        background-image: url('../img/man3.png');
+        left:320px;
+        background-position: 27px 0px;
+        width: 90px;
+    }
+    100%{
+        background-image: url('../img/man3.png');
+        left:320px;
+        background-position: 27px 0px;
+        width: 90px;
+
+     }
+  }
+
