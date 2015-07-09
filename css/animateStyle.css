@@ -20,6 +20,15 @@
   -o-transition: opacity 1s,bottom 1s;
   transition: opacity 1s,bottom 1s;
 }
+.gift{
+    left: 629px;
+    top: -11px;
+    opacity:1;
+    -webkit-transition: opacity 1s,top 1s;
+  -moz-transition: opacity 1s,top 1s;
+  -o-transition: opacity 1s,top 1s;
+  transition: opacity 1s,top 1s;
+}
 .preset1-man1-animate{
     -moz-animation:preset1-man1 10s ease-out forwards;
     -o-animation:preset1-man1 10s ease-out forwards;

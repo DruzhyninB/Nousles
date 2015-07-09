@@ -5,6 +5,7 @@ function start() {
     //document.getElementById("preset2").addEventListener("click", preset2Activete, false);
     //document.getElementById("preset3").addEventListener("click", preset3Activete, false);
     var timeoutHolder, deeptimeoutholder;
+    var gift = document.getElementsByClassName("gift")[0];
     function preset1Activete() {
         var containerDots = document.getElementsByClassName("hum-line")[0];
         //remove old scene
@@ -36,11 +37,11 @@ function start() {
             manContainer3.appendChild(pointer3);
             pointer3.className = "pointer";
             deeptimeoutholder = setTimeout(function () {
-                for (var i = (containerDots.childNodes.length - 1) ; i > -1; i--) {
-                    containerDots.childNodes[i].style.bottom = "60px";
-                    containerDots.childNodes[i].style.opacity = 0;
-                }
-            },5000)
+                    manContainer3.style.bottom = "60px";
+                    manContainer3.style.opacity = 0;
+                    gift.style.top = "-60px";
+                    gift.style.opacity = 0;
+            },4000)
 
         }, 4500);
         }
