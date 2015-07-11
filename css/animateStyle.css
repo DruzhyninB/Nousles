@@ -20,6 +20,9 @@
   -o-transition: opacity 1s,bottom 1s;
   transition: opacity 1s,bottom 1s;
 }
+.width-80{
+    width:80px
+}
 .gift{
     left: 629px;
     top: -11px;
@@ -44,59 +47,55 @@
 .preset1-man3-animate{
     -moz-animation:preset1-man3 3s ease-out forwards;
     -o-animation:preset1-man3 3s ease-out forwards;
-    -webkit-animation:preset1-man3 3s ease-out 0.8s forwards;
+    -webkit-animation:preset1-man3 3s ease-out forwards;
     animation:preset1-man3 3s ease-out forwards ;
 }
+.preset2-vespa-animate{
+    -moz-animation:preset2-vespa 3s 3 ease-out forwards;
+    -o-animation:preset2-vespa 3s 3 ease-out forwards;
+    -webkit-animation:preset2-vespa 3s 3 ease-out forwards;
+    animation:preset2-vespa 3s 3  ease-out forwards ;
+}
+.preset2-gift-animation{
+    -moz-animation:preset2-gift 3s 3 ease-out forwards;
+    -o-animation:preset2-gift 3s 3 ease-out forwards;
+    -webkit-animation:preset2-gift 3s 3 ease-out forwards;
+    animation:preset2-gift 3s 3  ease-out forwards ;
+}
+.preset2-talkingMan-animate{
+     -moz-animation:preset2-talkingMan 15s ease-out forwards;
+    -o-animation:preset2-talkingMan 15s ease-out forwards;
+    -webkit-animation:preset2-talkingMan 15s ease-out forwards;
+    animation:preset2-talkingMan 15s  ease-out forwards ;
+}
+.preset2-runingAfterTalkMan-animate{
+         -moz-animation:preset2-runingAfterTalkMan 4s 3 ease-out forwards;
+    -o-animation:preset2-runingAfterTalkMan 4s 3 ease-out forwards;
+    -webkit-animation:preset2-runingAfterTalkMan 4s 3 ease-out forwards;
+    animation:preset2-runingAfterTalkMan 4s 3 ease-out forwards ;
+}
+.preset2-runingFinalMan-animate{
+    -moz-animation:preset2-runingFinalMan 4s 3 ease-out forwards;
+    -o-animation:preset2-runingFinalMan 4s 3 ease-out forwards;
+    -webkit-animation:preset2-runingFinalMan 4s 3 ease-out forwards;
+    animation:preset2-runingFinalMan 4s 3 ease-out forwards ;
+}
+.preset2-gift1-animation{
+    -moz-animation:preset2-gift1 4s 3 ease-out forwards;
+    -o-animation:preset2-gift1 4s 3 ease-out forwards;
+    -webkit-animation:preset2-gift1 4s 3 ease-out forwards;
+    animation:preset2-gift1 4s 3  ease-out forwards ;
+}
 
-   @keyframes preset1-man3{
-      0%{
-           background-image: url('../img/man6.png');
-           left:165px;
-       }
-      3%{
-            
-           background-image: url('../img/man6.png');
-           left:165px;
-        }
-       100%{
-           background-image: url('../img/man6.png');
-           left:598px;
-       }
- }
- @-moz-keyframes preset1-man3{
-             0%{
-           background-image: url('../img/man6.png');
-           left:165px;
-       }
-      3%{
-            
-           background-image: url('../img/man6.png');
-           left:165px;
-        }
-       100%{
-           background-image: url('../img/man6.png');
-           left:598px;
-       } }
-  @-webkit-keyframes preset1-man3{
-             0%{
-           background-image: url('../img/man6.png');
-           left:165px;
-       }
-      3%{
-            
-           background-image: url('../img/man6.png');
-           left:165px;
-        }
-       100%{
-           background-image: url('../img/man6.png');
-           left:598px;
-       }  }
+
+
 
 
 
 /*
         keyframes Properties --------------- 
 */
+/*===========================First animation button=====================================*/
  @keyframes preset1-man1{
      0%{
          background-image: url('../img/man2.png');
@@ -475,3 +474,884 @@
      }
   }
 
+   @keyframes preset1-man3{
+      0%{
+           background-image: url('../img/man6.png');
+           left:165px;
+       }
+      3%{
+            
+           background-image: url('../img/man6.png');
+           left:165px;
+        }
+       100%{
+           background-image: url('../img/man6.png');
+           left:598px;
+       }
+ }
+ @-moz-keyframes preset1-man3{
+             0%{
+           background-image: url('../img/man6.png');
+           left:165px;
+       }
+      3%{
+            
+           background-image: url('../img/man6.png');
+           left:165px;
+        }
+       100%{
+           background-image: url('../img/man6.png');
+           left:598px;
+       } 
+
+ }
+  @-webkit-keyframes preset1-man3{
+             0%{
+           background-image: url('../img/man6.png');
+           left:165px;
+       }
+      3%{
+            
+           background-image: url('../img/man6.png');
+           left:165px;
+        }
+       100%{
+           background-image: url('../img/man6.png');
+           left:598px;
+       }  
+
+  }
+
+  /*===========================Second animation button=====================================*/
+@keyframes preset2-vespa{
+    0%{
+        background-image:url('../img/man5.png');
+        left:55px;
+        width:75px;
+    }
+    10%{
+        background-image:url('../img/man5.png');
+        left:55px;
+        width:75px;
+    }
+    77%{
+        background-image:url('../img/man5.png');
+        left:575px;
+    }
+    95%{
+        background-image:url('../img/man5.png');
+        left:575px;
+        opacity:1;
+        bottom:-7px;
+    }
+    100%{
+        background-image:url('../img/man5.png');
+        left:575px;
+        opacity:0;
+        width:75px;
+        bottom:60px;
+    }
+
+}
+ @-moz-keyframes preset2-vespa{
+    0%{
+        background-image:url('../img/man5.png');
+        left:55px;
+        width:75px;
+    }
+    77%{
+        background-image:url('../img/man5.png');
+        left:575px;
+    }
+    95%{
+        background-image:url('../img/man5.png');
+        left:575px;
+        opacity:1;
+        bottom:-7px;
+    }
+    100%{
+        background-image:url('../img/man5.png');
+        left:575px;
+        opacity:0;
+        width:75px;
+        bottom:60px;
+    }
+
+ }
+  @-webkit-keyframes preset2-vespa{
+    0%{
+        background-image:url('../img/man5.png');
+        left:55px;
+        width:75px;
+    }
+    77%{
+        background-image:url('../img/man5.png');
+        left:575px;
+    }
+    95%{
+        background-image:url('../img/man5.png');
+        left:575px;
+        opacity:1;
+        bottom:-7px;
+    }
+    100%{
+        background-image:url('../img/man5.png');
+        left:575px;
+        opacity:0;
+        width:75px;
+        bottom:60px;
+    }
+
+  }
+
+
+  @keyframes preset2-talkingMan{
+    0%{
+    left:598px;
+    background-image:url('../img/man7.png');
+    }
+    2%{
+    left:598px;
+    background-image:url('../img/man7.png');
+    }
+    15%{
+    left:110px;
+    background-image:url('../img/man7.png');
+    }
+    16%{
+    left:110px;
+    background-image:url('../img/man2.png');
+    }
+    20%{
+    left:110px;
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    }
+/*начало 1 разговора*/
+    21%{
+    left:110px;
+    background-position: 100% -2%;
+    background-image:url('../img/man4.png');
+    }
+    27%{
+    left:110px;
+    background-position: 100% -2%;
+    background-image:url('../img/man4.png');
+    }
+    28%{
+    left:110px;
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    }
+    46%{
+    left:110px;
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    }
+/*начало 2 разговора*/
+    47%{
+    left:110px;
+    background-position: 100% -2%;
+    background-image:url('../img/man4.png');
+    }
+    53%{
+    left:110px;
+    background-position: 100% -2%;
+    background-image:url('../img/man4.png');
+    }
+    54%{
+    left:110px;
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    }
+    72%{
+    left:110px;
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    }
+/*начало 3 разговора*/
+    73%{
+    left:110px;
+    background-position: 100% -2%;
+    background-image:url('../img/man4.png');
+    }
+    79%{
+    left:110px;
+    background-position: 100% -2%;
+    background-image:url('../img/man4.png');
+    }
+    80%{
+    left:110px;
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    }
+    90%{    left:110px;
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    opacity:1;
+    bottom:-7px;
+    }
+    100%{
+    left:110px;
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    opacity:0;
+    bottom:66px;
+    }
+}
+ @-moz-keyframes preset2-gift{
+    0%{
+    left:598px;
+    background-image:url('../img/man7.png');
+    }
+    2%{
+    left:598px;
+    background-image:url('../img/man7.png');
+    }
+    15%{
+    left:110px;
+    background-image:url('../img/man7.png');
+    }
+    16%{
+    left:110px;
+    background-image:url('../img/man2.png');
+    }
+    20%{
+    left:110px;
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    }
+/*начало 1 разговора*/
+    21%{
+    left:110px;
+    background-position: 100% -2%;
+    background-image:url('../img/man4.png');
+    }
+    27%{
+    left:110px;
+    background-position: 100% -2%;
+    background-image:url('../img/man4.png');
+    }
+    28%{
+    left:110px;
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    }
+    46%{
+    left:110px;
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    }
+/*начало 2 разговора*/
+    47%{
+    left:110px;
+    background-position: 100% -2%;
+    background-image:url('../img/man4.png');
+    }
+    53%{
+    left:110px;
+    background-position: 100% -2%;
+    background-image:url('../img/man4.png');
+    }
+    54%{
+    left:110px;
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    }
+    72%{
+    left:110px;
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    }
+/*начало 3 разговора*/
+    73%{
+    left:110px;
+    background-position: 100% -2%;
+    background-image:url('../img/man4.png');
+    }
+    79%{
+    left:110px;
+    background-position: 100% -2%;
+    background-image:url('../img/man4.png');
+    }
+    80%{
+    left:110px;
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    }
+    90%{    left:110px;
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    opacity:1;
+    bottom:-7px;
+    }
+    100%{
+    left:110px;
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    opacity:0;
+    bottom:66px;
+    } }
+  @-webkit-keyframes preset2-gift{
+    0%{
+    left:598px;
+    background-image:url('../img/man7.png');
+    }
+    2%{
+    left:598px;
+    background-image:url('../img/man7.png');
+    }
+    15%{
+    left:110px;
+    background-image:url('../img/man7.png');
+    }
+    16%{
+    left:110px;
+    background-image:url('../img/man2.png');
+    }
+    20%{
+    left:110px;
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    }
+/*начало 1 разговора*/
+    21%{
+    left:110px;
+    background-position: 100% -2%;
+    background-image:url('../img/man4.png');
+    }
+    27%{
+    left:110px;
+    background-position: 100% -2%;
+    background-image:url('../img/man4.png');
+    }
+    28%{
+    left:110px;
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    }
+    46%{
+    left:110px;
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    }
+/*начало 2 разговора*/
+    47%{
+    left:110px;
+    background-position: 100% -2%;
+    background-image:url('../img/man4.png');
+    }
+    53%{
+    left:110px;
+    background-position: 100% -2%;
+    background-image:url('../img/man4.png');
+    }
+    54%{
+    left:110px;
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    }
+    72%{
+    left:110px;
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    }
+/*начало 3 разговора*/
+    73%{
+    left:110px;
+    background-position: 100% -2%;
+    background-image:url('../img/man4.png');
+    }
+    79%{
+    left:110px;
+    background-position: 100% -2%;
+    background-image:url('../img/man4.png');
+    }
+    80%{
+    left:110px;
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    }
+    90%{    left:110px;
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    opacity:1;
+    bottom:-7px;
+    }
+    100%{
+    left:110px;
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    opacity:0;
+    bottom:60px;
+    }  }
+
+  
+@keyframes preset2-gift{
+    0%{
+    top: -11px;
+    opacity:1;
+    }
+    95%{
+    top: -11px;
+    opacity:1;
+    }
+    100%{
+    top: -60px;
+    opacity:0;
+    }
+}
+ @-moz-keyframes preset2-gift{
+    0%{
+    top: -11px;
+    opacity:1;
+    }
+    95%{
+    top: -11px;
+    opacity:1;
+    }
+    100%{
+    top: -60px;
+    opacity:0;
+    }
+ }
+  @-webkit-keyframes preset2-gift{
+    0%{
+    top: -11px;
+    opacity:1;
+    }
+    95%{
+    top: -11px;
+    opacity:1;
+    }
+    100%{
+    top: -60px;
+    opacity:0;
+    }
+  }
+
+
+  @keyframes preset2-runingAfterTalkMan{
+    0%{
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    left:55px;
+    }
+    15%{    
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    left:55px;
+    }
+    16%{    background-image:url('../img/man4.png');
+    background-position: 100% -2%;
+    left:55px;}
+    25%{
+    background-image:url('../img/man4.png');
+    background-position: 100% -2%;
+    left:55px;
+    }
+    26%{
+    background-image:url('../img/man6.png');
+    background-position: 50% -2%;
+    left:55px;
+    }
+    75%{
+    background-image:url('../img/man6.png');
+    background-position: 50% -2%;
+    left:598px;
+    }
+    80%{background-image:url('../img/man6.png');
+    background-position: 50% -2%;
+    left:598px;opacity:1;
+    bottom:-7px;}
+    100%{
+        background-image:url('../img/man6.png');
+    background-position: 50% -2%;
+    left:598px;
+    opacity:0;
+    bottom:60px;
+    }
+}
+ @-moz-keyframes preset2-runingAfterTalkMan{
+    0%{
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    left:55px;
+    }
+    15%{    
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    left:55px;
+    }
+    16%{    background-image:url('../img/man4.png');
+    background-position: 100% -2%;
+    left:55px;}
+    25%{
+    background-image:url('../img/man4.png');
+    background-position: 100% -2%;
+    left:55px;
+    }
+    26%{
+    background-image:url('../img/man6.png');
+    background-position: 50% -2%;
+    left:55px;
+    }
+    75%{
+    background-image:url('../img/man6.png');
+    background-position: 50% -2%;
+    left:598px;
+    }
+    80%{background-image:url('../img/man6.png');
+    background-position: 50% -2%;
+    left:598px;opacity:1;
+    bottom:-7px;}
+    100%{
+        background-image:url('../img/man6.png');
+    background-position: 50% -2%;
+    left:598px;
+    opacity:0;
+    bottom:60px;
+    }
+ }
+  @-webkit-keyframes preset2-runingAfterTalkMan{
+    0%{
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    left:55px;
+    }
+    15%{    
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    left:55px;
+    }
+    16%{    background-image:url('../img/man4.png');
+    background-position: 100% -2%;
+    left:55px;}
+    25%{
+    background-image:url('../img/man4.png');
+    background-position: 100% -2%;
+    left:55px;
+    }
+    26%{
+    background-image:url('../img/man6.png');
+    background-position: 50% -2%;
+    left:55px;
+    }
+    75%{
+    background-image:url('../img/man6.png');
+    background-position: 50% -2%;
+    left:598px;
+    }
+    80%{background-image:url('../img/man6.png');
+    background-position: 50% -2%;
+    left:598px;opacity:1;
+    bottom:-7px;}
+    100%{
+        background-image:url('../img/man6.png');
+    background-position: 50% -2%;
+    left:598px;
+    opacity:0;
+    bottom:60px;
+    }
+  }
+
+    @keyframes preset2-runingFinalMan{
+    0%{
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    left:55px;
+    }
+    15%{    
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    left:55px;
+    }
+    16%{    background-image:url('../img/man6.png');
+    background-position: 100% -2%;
+    left:55px;}
+    75%{
+    background-image:url('../img/man6.png');
+    background-position: 50% -2%;
+    left:598px;
+    }
+    80%{background-image:url('../img/man6.png');
+    background-position: 50% -2%;
+    left:598px;opacity:1;
+    bottom:-7px;}
+    100%{
+        background-image:url('../img/man6.png');
+    background-position: 50% -2%;
+    left:598px;
+    opacity:0;
+    bottom:60px;
+    }
+}
+ @-moz-keyframes preset2-runingFinalMan{
+    0%{
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    left:55px;
+    }
+    15%{    
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    left:55px;
+    }
+    16%{    background-image:url('../img/man6.png');
+    background-position: 100% -2%;
+    left:55px;}
+    75%{
+    background-image:url('../img/man6.png');
+    background-position: 50% -2%;
+    left:598px;
+    }
+    80%{background-image:url('../img/man6.png');
+    background-position: 50% -2%;
+    left:598px;opacity:1;
+    bottom:-7px;}
+    100%{
+        background-image:url('../img/man6.png');
+    background-position: 50% -2%;
+    left:598px;
+    opacity:0;
+    bottom:60px;
+    }
+ }
+  @-webkit-keyframes preset2-runingFinalMan{
+    0%{
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    left:55px;
+    }
+    15%{    
+    background-image:url('../img/man2.png');
+    background-position: 50% -2%;
+    left:55px;
+    }
+    16%{    background-image:url('../img/man6.png');
+    background-position: 100% -2%;
+    left:55px;}
+    75%{
+    background-image:url('../img/man6.png');
+    background-position: 50% -2%;
+    left:598px;
+    }
+    80%{background-image:url('../img/man6.png');
+    background-position: 50% -2%;
+    left:598px;opacity:1;
+    bottom:-7px;}
+    100%{
+        background-image:url('../img/man6.png');
+    background-position: 50% -2%;
+    left:598px;
+    opacity:0;
+    bottom:60px;
+    }
+  }
+
+  
+@keyframes preset2-gift1{
+    0%{
+    top: -11px;
+    opacity:1;
+    }
+   80%{
+    top: -11px;
+    opacity:1;
+    }
+    100%{
+    top: -60px;
+    opacity:0;
+    }
+}
+ @-moz-keyframes preset2-gift1{
+    0%{
+    top: -11px;
+    opacity:1;
+    }
+    80%{
+    top: -11px;
+    opacity:1;
+    }
+    100%{
+    top: -60px;
+    opacity:0;
+    }
+ }
+  @-webkit-keyframes preset2-gift1{
+    0%{
+    top: -11px;
+    opacity:1;
+    }
+    80%{
+    top: -11px;
+    opacity:1;
+    }
+    100%{
+    top: -60px;
+    opacity:0;
+    }
+  }
+  /*===========================Third animation button=====================================*/
+/*Two drivers + gift*/
+
+.pointer_vespars{
+  width: 21px;
+  height: 21px;
+  border: 1px solid #000;
+  border-radius: 100%;
+  background-color: #626262;
+  margin: 0px auto;
+  margin-top: 79px;
+}
+
+.preset3-man_vespas-animate {
+    top: 7px;
+    width: 80px;
+    height: 80px;
+    -moz-animation: man_vespas-animate 6250ms ease-out forwards;
+    -o-animation: man_vespas-animate 6250ms ease-out forwards;
+    -webkit-animation: man_vespas-animate 6250ms ease-out forwards;
+    animation: man_vespas-animate 6250ms ease-out forwards;
+    
+    -moz-animation-iteration-count: 2;
+    -o-animation-iteration-count: 2;
+    -webkit-animation-iteration-count: 2;
+    animation-iteration-count: 2;
+}
+
+
+@keyframes man_vespas-animate{
+     0%{
+         background-image: url('../img/man1.png');
+         left:55px;
+         top:7px;
+    }
+    1% {
+        left: 55px;
+        bottom:-7px;
+        background-image: url('../img/man5.png');        
+    }
+
+
+    75% 
+    {
+        left:560px;
+        top:7px;
+        background-image: url('../img/man5.png');
+        opacity:1;
+    }
+
+    80%
+    {
+        
+        left:560px;
+        top:-60px;
+        background-image: url('../img/man5.png');
+        opacity:0;        
+       }
+
+    100% 
+    {
+        left:560px;
+        top:-60px;
+        background-image: url('../img/man5.png');
+        opacity:0;
+    }
+ }
+
+/*Animation for gift*/
+
+.gift_for_vespars 
+{
+    -moz-animation:gift_vespas-animate 6250ms ease-out forwards;
+    -o-animation:gift_vespas-animate 6250ms ease-out forwards;
+    -webkit-animation:gift_vespas-animate 6250ms ease-out forwards;
+    animation: gift_vespas-animate 6250ms ease-out forwards ;
+
+    -moz-animation-iteration-count: 2;
+    -o-animation-iteration-count: 2;
+    -webkit-animation-iteration-count: 2;
+    animation-iteration-count: 2;
+    
+}
+
+@keyframes gift_vespas-animate 
+{
+     0%{
+          left: 629px;
+          top: -12px;
+          opacity:1;
+        }
+
+    75% {
+          left: 629px;
+          top: -12px;
+          opacity:1;
+
+    }
+    80%
+    {        
+        top: -60px;
+        opacity:0;        
+    }
+
+    100%
+    {        
+        top: -12px;
+        opacity:1;        
+    }
+
+}
+
+
+/*One driver + talking man*/
+
+.preset3-man2_vespas-animate {
+    
+    top: 7px;
+    width: 80px;
+    height: 80px;
+    -moz-animation: man_vespas2-animate 10s ease-out forwards;
+    -o-animation: man_vespas2-animat1e 10s ease-out forwards;
+    -webkit-animation: man_vespas2-animate 10s ease-out forwards;
+    animation: man_vespas2-animate 10s ease-out forwards;
+        
+}
+
+
+@keyframes man_vespas2-animate {
+    0% {
+        background-image: url('../img/man2.png');
+        left: 55px;
+        top: 7px;
+    }
+
+    1% {
+        left: 55px;
+        top: 7px;
+        background-image: url('../img/man5.png');
+    }
+
+
+    50% {
+        left: 560px;
+        top: 7px;
+        background-image: url('../img/man5.png');
+        opacity: 1;
+    }
+    51%{
+        left: 560px;
+        top: 7px;
+        background-image: url('../img/man5_revers.png');
+        opacity: 1;
+    }
+
+
+    100% {
+        left: 90px;
+        top: 7px;
+        background-image: url('../img/man5_revers.png');
+        opacity: 1;
+    }
+}

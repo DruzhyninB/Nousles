@@ -8,14 +8,16 @@ function start() {
     valhold.id = "OFTOP"
     valhold.style.fontSize = "20px"
     valhold.style.color = "#fff"
+    valhold.style.zIndex = "1000";
 
     document.body.appendChild(valhold);
-
+   
     window.addEventListener("scroll", scrollVizer, false);
 
     function scrollVizer() {
+        var pageHeight = document.documentElement.clientHeight;
         var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-        document.getElementById("OFTOP").innerHTML = scrolled+"px";
+        document.getElementById("OFTOP").innerHTML ="Was scrolled: "+scrolled+"px </br> Page Height: "+pageHeight+"px";
 
     }
 }
